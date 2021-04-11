@@ -1,6 +1,6 @@
 import styles from "../styles/Home.module.css";
 
-export default function Contact() {
+const Contact = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>
@@ -8,4 +8,6 @@ export default function Contact() {
       </h1>
     </div>
   );
-}
+};
+
+export default Contact;

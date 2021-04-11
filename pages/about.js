@@ -1,6 +1,6 @@
 import styles from "../styles/Home.module.css";
 
-export default function About() {
+const About = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>
@@ -8,4 +8,6 @@ export default function About() {
       </h1>
     </div>
   );
-}
+};
+
+export default About;
