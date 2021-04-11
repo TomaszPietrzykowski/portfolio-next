@@ -61,8 +61,12 @@ function HomePage() {
             <button className={styles.ctaPrimary}>My Work</button>
             <button className={styles.ctaSecondary}>Contact</button>
           </div>
+          <div className={styles.heroImg}></div>
         </div>
       </main>
+      <section className={styles.featured}>
+        <div className={styles.container}></div>
+      </section>
     </div>
   );
 }

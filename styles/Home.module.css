@@ -4,7 +4,8 @@
   left: 0;
   width: 100%;
   background-color: var(--persianBlue);
-  color: #ffffff;
+  color: var(--isabelline);
+  z-index: 3000;
 }
 
 .nav {
@@ -17,12 +18,14 @@
 .nav a {
   padding: 0.5rem 1rem;
   margin: 0.5rem;
+  transition: all 0.2s ease-in-out;
 }
 .nav a:hover {
   color: var(--goldCrayola);
 }
 .path {
-  fill: var(--white);
+  fill: var(--isabelline);
+  transition: all 0.2s ease-in-out;
 }
 .nav a:hover .path {
   fill: var(--goldCrayola);
@@ -41,6 +44,11 @@
   font-size: 1.4rem;
   font-weight: 500;
   text-shadow: 0px 0px 2px var(--persianBlue);
+  cursor: pointer;
+}
+
+.firstname {
+  color: var(--isabelline);
 }
 
 .lastname {
@@ -66,14 +74,15 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  position: relative;
 }
 
 .title {
   font-size: 4.3rem;
   font-weight: 600;
   line-height: 1.1;
-  margin-top: 0.5rem;
-  text-shadow: 0px 0px 2px var(--white);
+  margin: 0.5rem 0 3rem 0;
+  text-shadow: 0px 0px 2px var(--isabelline);
 }
 .subtitle {
   text-transform: uppercase;
@@ -82,4 +91,52 @@
   letter-spacing: 11px;
   color: var(--goldCrayola);
   text-shadow: 0px 0px 2px var(--persianBlue);
+}
+.btnContainer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ctaSecondary,
+.ctaPrimary {
+  padding: 1.2rem 4rem 1rem 4rem;
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: none;
+  opacity: 0.9;
+  color: var(--goldCrayola);
+  border: 2px solid var(--goldCrayola);
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px rgba(20, 39, 57, 0.5);
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+}
+.ctaPrimary {
+  margin-right: 4rem;
+  font-family: inherit;
+  background: var(--wine);
+}
+.ctaPrimary:hover,
+.ctaSecondary:hover {
+  opacity: 0.9;
+  border: 2px solid var(--white);
+
+  color: var(--isabelline);
+}
+.featured {
+  min-height: 50vh;
+}
+.heroImg {
+  height: 100%;
+  min-width: 50%;
+  max-width: 700px;
+  background-image: url("../public/hero.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
