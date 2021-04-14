@@ -57,10 +57,7 @@ function HomePage() {
             Fast and secure <br />
             web applications
           </h1>
-          <div className={styles.btnContainer}>
-            <button className={styles.ctaPrimary}>My Work</button>
-            <button className={styles.ctaSecondary}>Contact</button>
-          </div>
+          <button className={styles.cta}>My Work</button>
           <div className={styles.heroImg}></div>
         </div>
       </main>
