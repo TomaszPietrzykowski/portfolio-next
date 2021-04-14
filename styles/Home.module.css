@@ -90,7 +90,7 @@
   font-size: 4rem;
   font-weight: 600;
   line-height: 1.1;
-  margin: 0.5rem 0 3.5rem 0;
+  margin: 0 0 4rem 0;
   text-shadow: 0px 0px 2px var(--isabelline);
 }
 .subtitle {
@@ -104,7 +104,7 @@
 }
 
 .cta {
-  margin-bottom: 20rem;
+  margin-bottom: 18rem;
   padding: 1.2rem 5rem 1rem 5rem;
   font-family: inherit;
   font-size: 1.2rem;
@@ -154,7 +154,66 @@
   background-repeat: no-repeat;
   position: absolute;
   top: 0;
-  left: -7%;
-  opacity: 0.2;
+  left: -5%;
+  opacity: 0.15;
   z-index: 0;
+}
+
+/* -------------------------------------------------------- */
+
+.featured {
+  padding: 0 3rem;
+  display: flex;
+  max-width: 1300px;
+  margin: auto;
+  /* border: 1px solid blue; */
+}
+.featuredLeft {
+  flex: 1;
+  /* border: 1px solid green; */
+}
+.featuredRight {
+  flex: 1;
+  /* border: 1px solid red; */
+}
+.featuredTitle {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0;
+  text-shadow: 0px 0px 2px rgba(5, 9, 14, 0.3);
+  color: rgb(7, 13, 19);
+}
+.featuredSubtitle {
+  /* margin-top: 10rem; */
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 10px;
+  color: var(--indygoDye);
+  text-shadow: 0px 0px 34px rgba(5, 9, 14, 0.1);
+}
+.featuredWww {
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 10px;
+  color: rgba(5, 9, 14, 0.3);
+  text-shadow: 0px 0px 2px rgba(5, 9, 14, 0.1);
+  margin-bottom: 10rem;
+}
+
+.featuredSubhead {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--textPrimary);
+  text-shadow: 0px 0px 1px rgba(5, 9, 14, 0.1);
+  margin-bottom: 1rem;
+}
+.featuredPara {
+  margin-bottom: 6rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--textSecondary);
 }
