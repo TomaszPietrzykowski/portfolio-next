@@ -162,19 +162,25 @@
 /* -------------------------------------------------------- */
 
 .featured {
-  padding: 0 3rem;
   display: flex;
-  max-width: 1300px;
+  width: 100%;
   margin: auto;
+  margin-top: 3rem;
   /* border: 1px solid blue; */
 }
 .featuredLeft {
-  flex: 1;
+  padding: 0 3rem;
+  max-width: 650px;
+  margin-left: auto;
   /* border: 1px solid green; */
 }
 .featuredRight {
-  flex: 1;
+  width: 50%;
   /* border: 1px solid red; */
+  background-image: url("../public/cm-project.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .featuredTitle {
   font-size: 3.5rem;

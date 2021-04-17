@@ -15,11 +15,11 @@ const Featured = () => {
           NASA, NOAA and Berkely Institute, stored, updated daily and server on
           demand.
         </p>
-        <h4 className={styles.featuredSubhead}>Friendly data display</h4>
+        <h4 className={styles.featuredSubhead}>User Interface</h4>
         <p className={styles.featuredPara}>
           Climate data presented as an easy to read chart with dynamic data
           scope, as a table or downloadable file. Up to date newsfeed provides
-          makroeconomic and geopolitical context on climate.
+          macroeconomic and geopolitical context on climate change.
         </p>
       </div>
       <div className={styles.featuredRight}></div>
