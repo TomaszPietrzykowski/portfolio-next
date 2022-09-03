@@ -6,10 +6,14 @@ const Hero = () => {
       <div className={styles.heroContainer}>
         <h2 className={styles.subtitle}>Javascript Development</h2>
         <h1 className={styles.title}>
-          Fast and secure <br />
-          web applications
+          Weaving software
+          <br />
+          for the Web
         </h1>
-        <button className={styles.cta}>My Work</button>
+        <div className={styles.btnContainers}>
+          <button className={styles.cta}>My Work</button>
+          <button className={styles.ctaSecondary}>Contact</button>
+        </div>
       </div>
     </main>
   )

@@ -6,7 +6,7 @@ const Navbar = () => {
     <header className={styles.navbar}>
       <div className={styles.flex}>
         <div className={styles.logo}>
-          <span className={styles.firstname}>Tomasz</span>{' '}
+          <span className={styles.firstname}>Tomasz</span>
           <span className={styles.lastname}>Pietrzykowski</span>
         </div>
         <nav>
