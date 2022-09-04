@@ -1,4 +1,4 @@
-import styles from "../styles/Home.module.css";
+import styles from '../styles/Home.module.css'
 
 const Featured = () => {
   return (
@@ -21,16 +21,16 @@ const Featured = () => {
           scope, as a table or downloadable file. Up to date newsfeed provides
           macroeconomic and geopolitical context on climate change.
         </p>
-        <div className={styles.featuredBtnsContainer}>
+        {/* <div className={styles.featuredBtnsContainer}>
           <button className={styles.ctaSecondary}>Read More</button>
           <button className={styles.ctaSecondary} style={{ marginBottom: 0 }}>
             All Projects
           </button>
-        </div>
+        </div> */}
       </div>
       <div className={styles.featuredRight}></div>
     </section>
-  );
-};
+  )
+}
 
-export default Featured;
+export default Featured

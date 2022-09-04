@@ -162,7 +162,7 @@
   display: flex;
   width: 100%;
   margin: auto;
-  margin-top: 3rem;
+  margin-top: 8rem;
   /* border: 1px solid blue; */
 }
 .featuredLeft {
@@ -173,6 +173,7 @@
 }
 .featuredRight {
   width: 50%;
+  margin-top: -12rem;
   /* border: 1px solid red; */
   background-image: url("../public/cm-project.png");
   background-size: contain;
@@ -197,12 +198,12 @@
   text-shadow: 0px 0px 34px rgba(5, 9, 14, 0.1);
 }
 .featuredWww {
-  font-size: 0.9rem;
-  font-weight: 800;
-  letter-spacing: 10px;
-  color: rgba(5, 9, 14, 0.3);
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: rgba(5, 9, 14, 1);
   text-shadow: 0px 0px 2px rgba(5, 9, 14, 0.1);
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
 }
 
 .featuredSubhead {
@@ -215,10 +216,10 @@
 .featuredPara {
   margin-bottom: 5rem;
   font-size: 1rem;
-  letter-spacing: 1px;
+  letter-spacing: .5px;
   line-height: 1.5;
   font-weight: 500;
-  color: var(--textSecondary);
+  color: var(--textPrimary);
 }
 .featuredBtnsContainer {
   flex-direction: column;
