@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css'
 
-const Featured = () => {
+const Featured1 = () => {
   return (
     <section className={styles.featured}>
       <div className={styles.featuredLeft}>
@@ -9,17 +9,16 @@ const Featured = () => {
         <h3 className={styles.featuredWww}>www.climatemonitor.info</h3>
         <h4 className={styles.featuredSubhead}>Free Public API</h4>
         <p className={styles.featuredPara}>
-          RESTful API serving latest and historical climate data in json format.
-          Data on atmospheric greenhouse gasses, global temperatures, sea levels
-          and condition of the glaciers. Gathered over multiple sources like
-          NASA, NOAA and Berkely Institute, stored, updated daily and server on
-          demand.
+          RESTful API serving json data on climate change. Well over 40
+          endpoints with data on main climate factors. Data from NASA, NOAA and
+          Berkely Institute, stored, updated daily and served on demand.
         </p>
-        <h4 className={styles.featuredSubhead}>User Interface</h4>
+        <h4 className={styles.featuredSubhead}>Frontend</h4>
         <p className={styles.featuredPara}>
-          Climate data presented as an easy to read chart with dynamic data
-          scope, as a table or downloadable file. Up to date newsfeed provides
-          macroeconomic and geopolitical context on climate change.
+          Climate data friendly charted with dynamic range slider for high
+          resolution insight. Up to date newsfeed provides macroeconomic and
+          geopolitical context on climate change. Detailed documentation of the
+          API with list of all endpoints.
         </p>
         {/* <div className={styles.featuredBtnsContainer}>
           <button className={styles.ctaSecondary}>Read More</button>
@@ -33,4 +32,4 @@ const Featured = () => {
   )
 }
 
-export default Featured
+export default Featured1

@@ -128,7 +128,7 @@
 }
 .ctaSecondary:hover {
   opacity: 0.9;
-  color: rgb(0, 197, 198);
+  color: var(--accent01);
   border: 2px solid var(--accent01);
 }
 .ctaSecondary {
@@ -171,6 +171,12 @@
   margin-left: auto;
   /* border: 1px solid green; */
 }
+.featuredRight2 {
+  padding: 0 3rem 0 0;
+  max-width: 650px;
+  /* margin-left: auto; */
+  /* border: 1px solid green; */
+}
 .featuredRight {
   width: 50%;
   margin-top: -12rem;
@@ -193,14 +199,23 @@
   text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: 800;
-  letter-spacing: 10px;
-  color: var(--indygoDye);
+  letter-spacing: 4px;
+  color: var(--accent03);
+  text-shadow: 0px 0px 34px rgba(5, 9, 14, 0.1);
+}
+.featuredSubtitle2 {
+  /* margin-top: 10rem; */
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: var(--accent02);
   text-shadow: 0px 0px 34px rgba(5, 9, 14, 0.1);
 }
 .featuredWww {
   font-size: 1.2rem;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: rgba(5, 9, 14, 1);
   text-shadow: 0px 0px 2px rgba(5, 9, 14, 0.1);
   margin-bottom: 4rem;
@@ -218,7 +233,15 @@
   font-size: 1rem;
   letter-spacing: .5px;
   line-height: 1.5;
-  font-weight: 500;
+  font-weight: 400;
+  color: var(--textPrimary);
+}
+.featuredPara2 {
+  margin-top: 2.5rem;
+  font-size: 1rem;
+  letter-spacing: .5px;
+  line-height: 1.5;
+  font-weight: 400;
   color: var(--textPrimary);
 }
 .featuredBtnsContainer {
