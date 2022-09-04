@@ -30,6 +30,10 @@ const Featured2 = () => {
           Disable proxy with one click and read resources directly from the
           browser. Postman won't let you do it - just saying... ;)
         </p>
+        <div className={styles.featuredBtnsContainer2}>
+          <button className={styles.featuredBtn2}>Read More</button>
+          <button className={styles.featuredBtn2}>All Projects</button>
+        </div>
       </div>
     </section>
   )

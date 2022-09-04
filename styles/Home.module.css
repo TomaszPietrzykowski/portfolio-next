@@ -93,9 +93,9 @@
   margin-top: 10rem;
   margin-bottom: 2rem;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 200;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
   color: white;
   text-shadow: 0px 0px 2px var(--persianBlue);
 }
@@ -172,12 +172,12 @@
   /* border: 1px solid green; */
 }
 .featuredRight2 {
-  padding: 0 3rem 0 0;
+  padding: 8rem 3rem 0 0;
   max-width: 650px;
   /* margin-left: auto; */
   /* border: 1px solid green; */
 }
-.featuredRight {
+.featuredRight {  
   width: 50%;
   margin-top: -12rem;
   /* border: 1px solid red; */
@@ -213,12 +213,12 @@
   text-shadow: 0px 0px 34px rgba(5, 9, 14, 0.1);
 }
 .featuredWww {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 400;
   letter-spacing: 1px;
   color: rgba(5, 9, 14, 1);
   text-shadow: 0px 0px 2px rgba(5, 9, 14, 0.1);
-  margin-bottom: 4rem;
+  margin: 1rem 0 4rem 0;
 }
 
 .featuredSubhead {
@@ -229,7 +229,7 @@
   margin-bottom: 1rem;
 }
 .featuredPara {
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   font-size: 1rem;
   letter-spacing: .5px;
   line-height: 1.5;
@@ -237,7 +237,7 @@
   color: var(--textPrimary);
 }
 .featuredPara2 {
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   font-size: 1rem;
   letter-spacing: .5px;
   line-height: 1.5;
@@ -245,7 +245,46 @@
   color: var(--textPrimary);
 }
 .featuredBtnsContainer {
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+.featuredBtnsContainer2 {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  margin-bottom: 6rem;
+  margin-top: 4rem;
+}
+.featuredBtn {
+  padding: 1rem 3rem 1rem 3rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: none;
+  color: var(--accent03);
+  border: 2px solid var(--accent03);
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  
+}
+.featuredBtn2 {
+  padding: 1rem 3rem 1rem 3rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: none;
+  color: var(--accent02);
+  border: 2px solid var(--accent02);
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  
 }
 /* --------------------------------------------------------- */
 .whatIDoBackground {
@@ -299,9 +338,7 @@
   margin-bottom: 1rem;
   opacity: 0.7;
 }
-.featuredBtnsContainer {
-  flex-direction: column;
-}
+
 .whatIDoPara {
   margin-bottom: 5rem;
   font-size: 1rem;

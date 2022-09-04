@@ -11,21 +11,24 @@ const Featured1 = () => {
         <p className={styles.featuredPara}>
           RESTful API serving json data on climate change. Well over 40
           endpoints with data on main climate factors. Data from NASA, NOAA and
-          Berkely Institute, stored, updated daily and served on demand.
+          Berkely Institute, stored, updated daily and served on demand without
+          limits.
         </p>
         <h4 className={styles.featuredSubhead}>Frontend</h4>
         <p className={styles.featuredPara}>
-          Climate data friendly charted with dynamic range slider for high
-          resolution insight. Up to date newsfeed provides macroeconomic and
-          geopolitical context on climate change. Detailed documentation of the
-          API with list of all endpoints.
+          Climate data friendly charted with dynamic range scope for high
+          resolution insight. <br />
+          <br />
+          Up-to-date newsfeed provides macroeconomic and geopolitical context on
+          climate change. <br />
+          <br />
+          Detailed documentation of the API with a list of all available
+          endpoints.
         </p>
-        {/* <div className={styles.featuredBtnsContainer}>
-          <button className={styles.ctaSecondary}>Read More</button>
-          <button className={styles.ctaSecondary} style={{ marginBottom: 0 }}>
-            All Projects
-          </button>
-        </div> */}
+        <div className={styles.featuredBtnsContainer}>
+          <button className={styles.featuredBtn}>Read More</button>
+          <button className={styles.featuredBtn}>All Projects</button>
+        </div>
       </div>
       <div className={styles.featuredRight}></div>
     </section>

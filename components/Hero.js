@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <main className={styles.hero}>
       <div className={styles.heroContainer}>
-        <h2 className={styles.subtitle}>Javascript Development</h2>
+        <h2 className={styles.subtitle}>Javascript Developer</h2>
         <h1 className={styles.title}>
           Weaving software
           <br />
