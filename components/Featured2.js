@@ -1,4 +1,4 @@
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Featured.module.css'
 
 const Featured2 = () => {
   return (
