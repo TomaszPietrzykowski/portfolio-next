@@ -19,11 +19,9 @@ const Featured1 = () => {
           Climate data friendly charted with dynamic range scope for high
           resolution insight. <br />
           <br />
-          Up-to-date newsfeed provides macroeconomic and geopolitical context on
-          climate change. <br />
+          Up-to-date newsfeed providing wider context on climate change. <br />
           <br />
-          Detailed documentation of the API with a list of all available
-          endpoints.
+          Detailed documentation of the API with a list of endpoints.
         </p>
         <div className={styles.featuredBtnsContainer}>
           <button className={styles.featuredBtn}>Read More</button>

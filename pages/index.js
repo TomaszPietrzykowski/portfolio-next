@@ -1,7 +1,8 @@
 import Featured1 from '../components/Featured1'
 import Featured2 from '../components/Featured2'
 import Hero from '../components/Hero'
-import Navbar from '../components/Navbar'
+import Footer from '../components/Layout/Footer'
+import Navbar from '../components/Layout/Navbar'
 
 function HomePage() {
   return (
@@ -10,6 +11,7 @@ function HomePage() {
       <Hero />
       <Featured1 />
       <Featured2 />
+      <Footer />
     </div>
   )
 }
