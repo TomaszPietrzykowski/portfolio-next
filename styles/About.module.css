@@ -1,0 +1,28 @@
+.container {
+    margin-top: 4rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33% 67%;
+}
+.imageContainer {
+    height: 100%;
+    background-image: url("../public/about-me.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.content {
+    max-width: 870px;
+    margin-right: auto;
+    padding: 6rem;
+}
+.title {
+    margin: 0 0 12rem 0;
+    font-size: 3rem;
+}
+.content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 4rem;
+    letter-spacing: .5px;
+}
