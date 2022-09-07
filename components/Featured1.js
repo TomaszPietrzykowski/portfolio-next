@@ -9,21 +9,23 @@ const Featured1 = () => {
         <h3 className={styles.featuredWww}>www.climatemonitor.info</h3>
         <h4 className={styles.featuredSubhead}>Free Public API</h4>
         <p className={styles.featuredPara}>
-          RESTful API serving json data on climate change. Well over 40
-          endpoints with data on main climate factors. Data from NASA, NOAA and
-          Berkely Institute, stored, updated daily and served on demand without
-          limits.
+          <strong>Public RESTful API</strong> serving json data on climate
+          change. Well over 40 endpoints with data on main climate factors. Data
+          from NASA, NOAA and Berkely Institute, stored, updated daily and
+          served on demand without limits.
         </p>
-        <h4 className={styles.featuredSubhead}>Frontend</h4>
         <p className={styles.featuredPara}>
-          Climate data friendly charted with dynamic range scope for high
-          resolution insight. <br />
+          <strong>Climate data friendly charted</strong> with dynamic range
+          scope for high resolution insight. <br />
           <br />
-          Up-to-date newsfeed providing wider context on climate change. <br />
+          <strong>Up-to-date newsfeed</strong> providing wider context on
+          climate change. <br />
           <br />
-          Detailed documentation of the API with a list of endpoints.
+          <strong>Detailed documentation</strong> of the API with a list of
+          endpoints.
         </p>
         <div className={styles.featuredBtnsContainer}>
+          <button className={styles.featuredBtn}>Project Live</button>
           <button className={styles.featuredBtn}>Read More</button>
           <button className={styles.featuredBtn}>All Projects</button>
         </div>
