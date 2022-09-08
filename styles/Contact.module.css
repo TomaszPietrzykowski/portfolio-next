@@ -1,0 +1,100 @@
+.container {
+    margin-top: 4rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33% 67%;
+}
+.imageContainer {
+    height: 100%;
+    background-image: url("../public/contact.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contentContainer {
+    width: 100%;
+    background-color: #011318;
+    color: white;
+}
+.content {
+    max-width: 870px;
+    margin-right: auto;
+    padding: 6rem;
+}
+.title {
+    margin: 0 0 8rem 0;
+    font-size: 3rem;
+}
+.content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    letter-spacing: .5px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    padding-right: 4rem;
+    margin-bottom: 6rem;
+}
+.label {
+    margin: 2.5rem 0 .5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent01);
+}
+.text,
+.textarea {
+    padding: .8rem;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    color: #012e38;
+    font-family: inherit;
+}
+.text {
+    max-width: 400px;
+}
+ /* checbox sandbox */
+ .checkboxContainer,
+ .checkboxContainerError {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: "flex-start";
+    width: "100%";
+    max-width: 560;
+    padding: .5rem;
+    border: 1px solid #012e38;
+    border-radius: 4px;
+ }
+ .checkboxContainerError {
+    border: 1px solid red;
+ }
+ .checkboxLabel,
+ .checkboxLabelError {
+font-size: .9rem;
+letter-spacing: 1px;
+font-family: inherit;
+padding: .5rem;
+ }
+ .checkboxLabelError {
+color: red;
+ }
+.submitBtn {
+    padding: .8rem 2.2rem;
+    margin-right: auto;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: var(--accent01);
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    color: #011318;
+    border: 2px solid var(--accent01);  
+}
+.submitBtn:hover {
+    color: white;
+}
