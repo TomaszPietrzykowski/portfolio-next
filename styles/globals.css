@@ -6,10 +6,16 @@
   --textPrimary: rgba(5, 9, 14, 0.85);
   --textSecondary: rgba(5, 9, 14, 0.6);
 
+  --bg-dark01: rgb(1, 19, 24);
+  --bg-dark02: rgb(1, 46, 56);
+
   --accent01: rgb(0, 220, 250);
   --accent03: rgb(2, 157, 178);
   --accent02: rgb(186, 0, 152);
   --accent04: rgb(236, 146, 0);
+
+  --success: rgb(2, 160, 8);
+  --error: rgb(220, 0, 0);
 }
 
 * {

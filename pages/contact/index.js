@@ -3,7 +3,7 @@ import styles from '../../styles/Contact.module.css'
 
 const Contact = () => {
   const [legalConsent, setLegalConsent] = useState(false)
-  const [consentError, setConsentError] = useState(null)
+  const [consentError, setConsentError] = useState(true)
 
   return (
     <div className={styles.container}>
@@ -23,7 +23,7 @@ const Contact = () => {
             <label htmlFor='message' className={styles.label}>
               Message
             </label>
-            <textarea id='message' rows='20' className={styles.textarea} />
+            <textarea id='message' rows='15' className={styles.textarea} />
             <div
               className={
                 consentError
@@ -33,13 +33,14 @@ const Contact = () => {
             >
               <input
                 type='checkbox'
+                className={styles.checkbox}
                 checked={legalConsent}
                 onChange={(e) => {
                   setLegalConsent(e.target.checked)
-                  setConsentError(false)
+                  setConsentError(null)
                 }}
               />
-              <span
+              <label
                 className={
                   consentError
                     ? styles.checkboxLabelError
@@ -48,7 +49,7 @@ const Contact = () => {
               >
                 I grant all permissions required by law in order to send this
                 email
-              </span>
+              </label>
             </div>
             <button type='submit' className={styles.submitBtn}>
               Send message
