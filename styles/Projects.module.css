@@ -1,0 +1,81 @@
+.container {
+    margin-top: 4rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 67% 33%;
+}
+.leftBackground {
+    background-color: rgba(250, 250, 250, 1);
+}
+.imageContainer {
+    height: 100%;
+    background-image: url("../public/projects-main.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.content {
+    max-width: 960px;
+    margin-left: auto;
+    padding: 6rem 2rem;
+    position: relative;
+}
+.title {
+    margin: 0 0 8rem 0;
+    font-size: 3rem;
+}
+.content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    letter-spacing: .5px;
+}
+.projectsList {
+    padding: 0;
+}
+.projectsList li {
+   /* outline: 1px solid orange; */
+   margin-right: -50%;
+   margin-bottom: 8rem;
+   background: white;
+   border-radius: 20px;
+   box-shadow: 4px 4px 18px rgb(200, 200, 200);
+   display: grid;
+   grid-template-columns: 25% 50% 25%;
+
+}
+.projectLeft,
+.projectLeft2,
+.projectLeft3,
+.projectRight {
+    height: 100%;
+    background-image: url("../public/tophoneys-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+}
+.projectLeft2 {
+    background-image: url("../public/cm-logo.png");  
+}
+.projectLeft3 {
+    background-image: url("../public/cm-logo.png");  
+}
+.projectRight {
+    background-image: url("../public/cm-project.png");
+    background-position: center;
+}
+.projectDescription {
+    padding: 2rem;
+}
+.projectTitle {
+    font-size: 2.2rem;
+}
+.projectSubtitle {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent02)
+
+}
+.projectWww {
+    font-size: 1.2rem;
+}

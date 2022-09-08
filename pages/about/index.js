@@ -17,7 +17,7 @@ const About = () => {
         <h3>technologies</h3>
         <p>
           My web biom of choice is Node.js environment with React, Next.js and
-          Redux at the frontend. I build RESTful API's with Express framework. I
+          Redux at the frontend. I build RESTful API's with Node and Express. I
           write my own css/scss and have experience with frameworks like
           Material UI. For data storage my current apps are mostly using
           MongoDB.
