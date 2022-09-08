@@ -3,14 +3,17 @@ import styles from '../../styles/Contact.module.css'
 
 const Contact = () => {
   const [legalConsent, setLegalConsent] = useState(false)
-  const [consentError, setConsentError] = useState(true)
+  const [consentError, setConsentError] = useState(false)
 
   return (
     <div className={styles.container}>
       <div className={styles.imageContainer}></div>
       <div className={styles.contentContainer}>
         <div className={styles.content}>
-          <h1 className={styles.title}>Contact</h1>
+          <div className={styles.titleWrapper}>
+            <h1 className={styles.title}>Contact</h1>
+          </div>
+
           <form className={styles.form}>
             <label htmlFor='name' className={styles.label}>
               Your name

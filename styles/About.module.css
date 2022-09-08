@@ -17,8 +17,36 @@
     padding: 6rem;
 }
 .title {
-    margin: 0 0 12rem 0;
+    margin: 0 0 14rem 0;
     font-size: 3rem;
+    position: relative;
+    z-index: 1;
+}
+.titleWrapper {
+    position: relative;
+}
+.titleWrapper::before {
+    position: absolute;
+    content: "";
+    z-index: 0;
+
+    top: -4rem;
+    left: 12rem;
+
+    height: 16rem;
+    width: 8rem;
+
+    background-image: url("../public/decorator.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .3;
+}
+.subtitle {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    color: var(--accent01);
 }
 .content p {
     font-size: 1.2rem;

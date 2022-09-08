@@ -22,8 +22,30 @@
     padding: 6rem;
 }
 .title {
-    margin: 0 0 6rem 0;
+    margin: 0 0 12rem 0;
     font-size: 3rem;
+    position: relative;
+    z-index: 1;
+}
+.titleWrapper {
+    position: relative;
+}
+.titleWrapper::before {
+    position: absolute;
+    content: "";
+    z-index: 0;
+
+    top: -4rem;
+    left: .5rem;
+
+    height: 16rem;
+    width: 8rem;
+
+    background-image: url("../public/decorator-dark.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .3;
 }
 .content p {
     font-size: 1.2rem;
@@ -34,7 +56,7 @@
 .form {
     display: flex;
     flex-direction: column;
-    padding-right: 4rem;
+    padding: 0 4rem 0 .5rem;
     margin-bottom: 12rem;
 }
 .label {

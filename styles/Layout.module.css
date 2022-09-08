@@ -6,6 +6,7 @@
   background-color: rgba(0, 10, 10, 1);
   color: var(--isabelline);
   z-index: 3000;
+  padding: .9rem 0;
 }
 
 .nav {
@@ -59,11 +60,11 @@
 
 .footerContainer {
   width: 100%;
-  padding: .3rem;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: black;
+  padding: 1rem 0;
 }
 
 .footerNav {
@@ -75,7 +76,7 @@
 
 .footerNav li {
   padding: .1rem 1rem;
-  font-size: .95rem;
+  font-size: .9rem;
   border-right: 1px solid white;
   color: rgb(255, 255, 255);
 }

@@ -5,7 +5,9 @@ const ProjectsPage = () => {
     <div className={styles.container}>
       <div className={styles.leftBackground}>
         <div className={styles.content}>
-          <h1 className={styles.title}>My Work</h1>
+          <div className={styles.titleWrapper}>
+            <h1 className={styles.title}>My Work</h1>
+          </div>
 
           <ul className={styles.projectsList}>
             <li>
