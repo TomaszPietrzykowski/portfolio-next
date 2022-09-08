@@ -22,13 +22,17 @@ const ProjectsPage = () => {
                   e&nbsp;-&nbsp;commerce. My applications are secure, user
                   friendly and SEO optimized.
                 </p>
+                <div className={styles.projectLiBtnsContainer}>
+                  <button className={styles.projectLiBtn}>Read More</button>
+                  <button className={styles.projectLiBtn}>Project Live</button>
+                </div>
               </div>
               <div className={styles.projectRight}></div>
             </li>
             <li>
               <div className={styles.projectLeft2}></div>
               <div className={styles.projectDescription}>
-                <h4 className={styles.projectSubtitle}>Public API</h4>
+                <h4 className={styles.projectSubtitle2}>Public API</h4>
                 <h2 className={styles.projectTitle}>Climate Monitor</h2>
                 <div className={styles.projectWww}>www.tophoneys.com</div>
                 <p>
@@ -39,13 +43,17 @@ const ProjectsPage = () => {
                   e&nbsp;-&nbsp;commerce. My applications are secure, user
                   friendly and SEO optimized.
                 </p>
+                <div className={styles.projectLiBtnsContainer}>
+                  <button className={styles.projectLiBtn2}>Read More</button>
+                  <button className={styles.projectLiBtn2}>Project Live</button>
+                </div>
               </div>
               <div className={styles.projectRight}></div>
             </li>
             <li>
               <div className={styles.projectLeft3}></div>
               <div className={styles.projectDescription}>
-                <h4 className={styles.projectSubtitle}>HTTP/API client</h4>
+                <h4 className={styles.projectSubtitle3}>HTTP/API client</h4>
                 <h2 className={styles.projectTitle}>Mobula API</h2>
                 <div className={styles.projectWww}>www.mobula.dev</div>
                 <p>
@@ -56,6 +64,10 @@ const ProjectsPage = () => {
                   e&nbsp;-&nbsp;commerce. My applications are secure, user
                   friendly and SEO optimized.
                 </p>
+                <div className={styles.projectLiBtnsContainer}>
+                  <button className={styles.projectLiBtn3}>Read More</button>
+                  <button className={styles.projectLiBtn3}>Project Live</button>
+                </div>
               </div>
               <div className={styles.projectRight}></div>
             </li>
