@@ -25,8 +25,8 @@ const About = () => {
           experience with frameworks like Material UI. I work with MongoDB and
           Mongoose, use Git and Github for code and Asana for project
           management. I make mockups in Figma and my favourite IDE is VSCode.
-          That said, as a self-thaught developer I have strong learning skills
-          and I am eager to learn new technologies.
+          Having that all said, as a self-thaught developer I have strong
+          learning skills and I am eager to learn new technologies.
         </p>
         <h3 className={styles.subtitle}>interests</h3>
         <p>
