@@ -11,10 +11,10 @@ const About = () => {
 
         <h3 className={styles.subtitle}>who am i</h3>
         <p>
-          Hi, I am Tomasz, polish developer living in the Netherlands, region
-          Noord - Holland. I have been building web applications since 2019. I
-          have built, deployed and I am maintaining multiple functional apps
-          like content management system, public API or e-commerce site. My
+          Hi, I am Tomasz, polish developer living in Amsterdam region in the
+          Netherlands. I have been building web applications since 2019. I have
+          built, deployed and I am maintaining multiple functional apps like
+          content management system, public API or e-commerce site. My
           applications are secure, user friendly and SEO optimized.
         </p>
         <h3 className={styles.subtitle}>technologies</h3>
