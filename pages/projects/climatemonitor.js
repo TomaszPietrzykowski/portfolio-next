@@ -3,7 +3,7 @@ import styles from '../styles/Featured.module.css'
 const ClimateMonitor = () => {
   return (
     // rethink classes
-    <main className={styles.detailsContainer}>
+    <main>
       <h1>Project title</h1>
       <section className={styles.detailsEven}>
         <div className={styles.detailsLeft}></div>

@@ -53,11 +53,14 @@
     margin-bottom: 1rem;
     letter-spacing: .5px;
 }
+
+/* Email form */
+
 .form {
     display: flex;
     flex-direction: column;
     padding: 0 4rem 0 0;
-    margin-bottom: 12rem;
+    margin-bottom: 10rem;
 }
 .label {
     margin: 2.2rem 0 .4rem 0;
@@ -128,3 +131,35 @@ color: var(--error);
 .submitBtn:hover {
     color: var(--bg-dark01);
 }
+/* Let's connect! */
+
+.letsConnect {
+    margin: 10rem 0 4rem;
+}
+.letsConnect h2 {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+}
+.letsConnect p {
+    font-size: 1.1rem;
+    margin-bottom: 1.8rem;
+    cursor: pointer;
+    fill: white;
+    display: flex;
+    align-items: center;
+}
+.letsConnect a {
+    display: flex;
+    align-items: center;
+}
+.letsConnect a span {
+    margin-left: 1rem;
+}
+.letsConnect p:hover {
+    color: var(--accent01);
+    fill: var(--accent01);
+}
+.liIcon {
+    fill: inherit;
+}
+
