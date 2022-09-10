@@ -26,6 +26,15 @@
 .nav a:hover {
   color: var(--accent01);
 }
+/*
+
+Sizing icons for media querries
+
+ .nav svg {
+  height: 12rem;
+} 
+
+*/
 .path {
   fill: var(--isabelline);
   transition: all 0.2s ease-in-out;
