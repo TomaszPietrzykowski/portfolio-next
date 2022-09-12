@@ -167,7 +167,7 @@
 
  .detailsContainer {
     /* extract to navbar margin */
-    margin-top: 4rem;
+    margin: 4rem 0 8rem;
  }
 
  .detailsUneven,
@@ -178,16 +178,18 @@
  }
 
  .detailsContent {
-
     width: 100%;
     max-width: 650px;
  }
-
+/* content styles */
  .detailsUneven .detailsLeft:first-child {
     padding-left: 3rem;
     width: 100%;
     max-width: 650px;
     margin-left: auto;
+ }
+ .detailsEven .detailsRight > * {
+    padding-right: 2rem;
  }
 
  .detailsTitle {

@@ -1,40 +1,39 @@
 import styles from '../../styles/Projects.module.css'
 import Link from 'next/link'
 
-const ClimateMonitor = () => {
+const TopHoneys = () => {
   return (
     // rethink classes
     <main className={styles.detailsContainer}>
       <section className={styles.detailsUneven}>
         <div className={styles.detailsLeft}>
           <div className={styles.detailsContent}>
-            <h2 className={styles.detailsSubtitle}>Public REST API</h2>
-            <h1 className={styles.detailsTitle}>Climate Monitor</h1>
+            <h2 className={styles.detailsSubtitle}>e-commerce</h2>
+            <h1 className={styles.detailsTitle}>Top Honeys</h1>
             <h3 className={styles.detailsWww}>
-              <a href='https://climatemonitor.info' target='_blank'>
-                www.climatemonitor.info
+              <a href='https://tophoneys.com' target='_blank'>
+                www.tophoneys.com
               </a>
             </h3>
             <h4 className={styles.detailsSubhead}>Description</h4>
             <p className={styles.detailsPara}>
-              Free public API serving json data on climate change. Well over 40
-              endpoints with data on main climate factors. Data from NASA, NOAA
-              and Berkely Institute, stored, updated daily and served on demand
-              without limits. Frontend of the app provides neat charts with
-              dynamic scope for data analysis, climate newsfeed with headlines
-              from last 30 days and documentation of the API.
+              MERN stack e-commerce app running in production since June 2021.
+              Webshop implements all user auth logic, provides custom profiles
+              for clients and functionality-rich admin area. Fully responsive
+              app with wide scope of supported payment methods. Fast, 3-steps
+              checkout, designed with UX and conversion in mind.
             </p>
             <h4 className={styles.detailsSubhead}>Quick links</h4>
             <p className={styles.detailsPara}>
               <ul>
                 <li>
-                  <a href='https://climatemonitor.info' target='_blank'>
+                  <a href='https://tophoneys.com' target='_blank'>
                     Project live
                   </a>
                 </li>
                 <li>
                   <a
-                    href='https://github.com/TomaszPietrzykowski/climate-monitor-nextjs'
+                    href='https://github.com/TomaszPietrzykowski/tophoneys-frontend'
                     target='_blank'
                   >
                     Repo frontend
@@ -42,7 +41,7 @@ const ClimateMonitor = () => {
                 </li>
                 <li>
                   <a
-                    href='https://github.com/TomaszPietrzykowski/climate-monitor'
+                    href='https://github.com/TomaszPietrzykowski/tophoneys-backendr'
                     target='_blank'
                   >
                     Repo backend
@@ -67,23 +66,23 @@ const ClimateMonitor = () => {
           <div className={styles.detailsContent}>
             <h4 className={styles.detailsSubhead}>Technology</h4>
             <p className={styles.detailsPara}>
-              Node.js application running Express server. The heart of the
-              application is set of Cron schedulers running updates on all
-              datasets. Data is stored in MongoDB Atlas with use of Mongoose.
+              Node.js application with Express server and MongoDB Atlas. Mollie
+              Payments implementation. Authentication and authorization with
+              JWT.
             </p>
             <p className={styles.detailsPara}>
-              Frontend written in React with Next.js and styled with custom jss
-              using Material UI theming setup. Chart.js used for data
-              presentation and Spring.js for animations.
+              React SPA frontend with custom styles in jss applied via
+              MaterialUI theme. Axios used for data fetching.
             </p>
             <h4 className={styles.detailsSubhead}>Story behind</h4>
             <p className={styles.detailsPara}>
-              Climate Monitor evolved quite a bit from it's original idea.
-              Initially I wanted to play with data presentation, see how deeply
-              I can customize Chart.js library. Frontend app was supposed to
-              consume API and present charted data. Apparently I could not find
-              API that I would be 100% satisfied with, so I decided to write and
-              expose the one of my own.
+              Designed and built for startup, Top Hooneys app was kind of a
+              journey for me. I initially based my payments on PayPal, but I
+              didn't want to make my app rely too much on third party. It was
+              supposed to be easy to plug in and out payments gates as needed.
+              PayPal agressivly promotes it's client-side implementation, which
+              can be sacure only if PayPal stores client, products and
+              transactions data. I ended up
             </p>
             <p className={styles.detailsPara}>
               Some highlights of development would be lots of fun with
@@ -104,4 +103,4 @@ const ClimateMonitor = () => {
   )
 }
 
-export default ClimateMonitor
+export default TopHoneys
