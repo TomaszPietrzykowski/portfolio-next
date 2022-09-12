@@ -17,7 +17,7 @@ const ClimateMonitor = () => {
               endpoints with data on main climate factors. Data from NASA, NOAA
               and Berkely Institute, stored, updated daily and served on demand
               without limits. Frontend of the app provides neat charts with
-              dynamic scope for data analysis, climate newsfeed with headline
+              dynamic scope for data analysis, climate newsfeed with headlines
               from last 30 days and documentation of the API.
             </p>
             <h4 className={styles.detailsSubhead}>Quick links</h4>
@@ -51,11 +51,35 @@ const ClimateMonitor = () => {
             </p>
           </div>
         </div>
-        <div className={styles.detailsRight}></div>
+        <div className={styles.detailsRight}>
+          <img src='/cm-project.png' className={styles.imageTop} />
+        </div>
       </section>
       <section className={styles.detailsEven}>
-        <div className={styles.detailsLeft}></div>
-        <div className={styles.detailsRight}></div>
+        <div className={styles.detailsLeft}>
+          <img src='/cm-project.png' className={styles.imageTop} />
+        </div>
+        <div className={styles.detailsRight}>
+          <div className={styles.detailsContent}>
+            <h4 className={styles.detailsSubhead}>Technology</h4>
+            <p className={styles.detailsPara}>
+              Node.js application running Express server. The heart of the
+              application is set of Cron schedulers running updates on all
+              datasets. Data is stored in MongoDB Atlas with use of Mongoose.
+              Frontend written in React with Next.js and styled with custom jss
+              using Material UI theming setup. Charts handled by Chart.js.
+            </p>
+            <h4 className={styles.detailsSubhead}>Story behind</h4>
+            <p className={styles.detailsPara}>
+              Climate Monitor evolved quite a bit from it's original idea.
+              Initially I wanted to play with data presentation, see how deeply
+              I can customize Chart.js library. Frontend app was supposed to
+              consume API and present charted data. Apparently I could not find
+              API that I would be 100% satisfied with, so I decided to write and
+              expose my own API.
+            </p>
+          </div>
+        </div>
       </section>
     </main>
   )

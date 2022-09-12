@@ -178,10 +178,13 @@
  }
 
  .detailsContent {
-    padding-left: 3rem;
+
+    width: 100%;
+    max-width: 650px;
  }
 
  .detailsUneven .detailsLeft:first-child {
+    padding-left: 3rem;
     width: 100%;
     max-width: 650px;
     margin-left: auto;
@@ -236,4 +239,7 @@
 }
 .detailsPara ul li:hover {
     color: var(--accent03)
+}
+.imageTop {
+    width: 100%;
 }
