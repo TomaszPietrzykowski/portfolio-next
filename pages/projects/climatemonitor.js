@@ -67,9 +67,9 @@ const ClimateMonitor = () => {
           <div className={styles.detailsContent}>
             <h4 className={styles.detailsSubhead}>Technology</h4>
             <p className={styles.detailsPara}>
-              Node.js application running Express server. The heart of the
-              application is set of Cron schedulers running updates on all
-              datasets. Data is stored in MongoDB Atlas with use of Mongoose.
+              Node.js application with Express server. The heart of the
+              application is Cron scheduler running updates on all datasets.
+              Data is stored in MongoDB Atlas with use of Mongoose.
             </p>
             <p className={styles.detailsPara}>
               Frontend written in React with Next.js and styled with custom jss

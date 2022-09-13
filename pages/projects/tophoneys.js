@@ -66,34 +66,43 @@ const TopHoneys = () => {
           <div className={styles.detailsContent}>
             <h4 className={styles.detailsSubhead}>Technology</h4>
             <p className={styles.detailsPara}>
-              Node.js application with Express server and MongoDB Atlas. Mollie
-              Payments implementation. Authentication and authorization with
-              JWT.
+              Node.js application with Express server and MongoDB Atlas
+              database. Mollie Payments implementation. Authentication and
+              authorization with JWT, encryption with Bcrypt.js.
             </p>
             <p className={styles.detailsPara}>
-              React SPA frontend with custom styles in jss applied via
-              MaterialUI theme. Axios used for data fetching.
+              React SPA frontend with Redux state management. Custom styles in
+              jss applied via MaterialUI theming system. Axios used for data
+              fetching.
             </p>
             <h4 className={styles.detailsSubhead}>Story behind</h4>
             <p className={styles.detailsPara}>
-              Designed and built for startup, Top Hooneys app was kind of a
-              journey for me. I initially based my payments on PayPal, but I
-              didn't want to make my app rely too much on third party. It was
-              supposed to be easy to plug in and out payments gates as needed.
-              PayPal agressivly promotes it's client-side implementation, which
-              can be sacure only if PayPal stores client, products and
-              transactions data. I ended up
+              Designed and built for startup, Top Honeys app was kind of a
+              journey for me. I initially based payments on PayPal, but I didn't
+              want the app to rely too much on third party. PayPal aggressively
+              promotes it's client-side implementation, which can be secure only
+              if PayPal stores data. Server-side implementation turned out to be
+              flagged and discouraged. I ended up implementing Mollie Payments
+              (best decision ever) and designing architecture where client,
+              product and transaction data is stored within own backend,
+              allowing necessary validation without duplicating data.
             </p>
             <p className={styles.detailsPara}>
-              Some highlights of development would be lots of fun with
-              Material&nbsp;UI and a deep dive into REST architecture. I am also
-              happy to provide useful resources to other developers and possibly
-              contribute by that to raise of climate awareness.
+              Development highlights would certainly be PayPal developer
+              experience versus smooth and pleasant Mollie implementation. But
+              also funny lessons learnt, like Google Translate confusing the
+              world out of React, or Safari ruining my day.
             </p>
             <p className={styles.detailsPara}>
-              Give it a shot:{' '}
-              <a href='https://climatemonitor.info' target='_blank'>
-                www.climatemonitor.info
+              Seriously though, I enjoyed working with Redux within this project
+              a lot. Somewhat repetitive, handling the state of this size gave
+              me solid grip on the workflow within Redux to the point I find it
+              intuitive and enjoyable.
+            </p>
+            <p className={styles.detailsPara}>
+              Give it a shot:
+              <a href='https://tophoneys.com' target='_blank'>
+                www.tophoneys.com
               </a>
             </p>
           </div>

@@ -240,7 +240,8 @@
     color: var(--textSecondary)
 }
 .detailsPara ul li:hover {
-    color: var(--accent03)
+    color: var(--accent03);
+    text-decoration: underline;
 }
 .imageTop {
     width: 100%;
