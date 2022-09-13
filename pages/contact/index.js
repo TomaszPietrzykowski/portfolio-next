@@ -1,9 +1,62 @@
 import { useState } from 'react'
+import axios from 'axios'
 import styles from '../../styles/Contact.module.css'
 
 const Contact = () => {
+  // legal consent state
   const [legalConsent, setLegalConsent] = useState(false)
   const [consentError, setConsentError] = useState(false)
+  // form control
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  // submit state
+  const [loading, setLoading] = useState(false)
+  const [success, setSuccess] = useState(true)
+
+  // email controller
+  const sendEmail = async (name, email, message) => {
+    try {
+      setLoading(true)
+      const config = {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      }
+      const { data } = await axios.post(
+        'http://localhost:5000',
+        { name, email, message },
+        config
+      )
+
+      if (data.status === 'success') {
+        setName('')
+        setEmail('')
+        setMessage('')
+        setLegalConsent(false)
+        setLoading(false)
+        // display popup
+        setSuccess(true)
+        setTimeout(() => setSuccess(false), 2000)
+      }
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+  // form handler
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    if (legalConsent) {
+      sendEmail(name, email, message)
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      })
+    } else {
+      setConsentError(true)
+    }
+  }
 
   return (
     <div className={styles.container}>
@@ -14,19 +67,40 @@ const Contact = () => {
             <h1 className={styles.title}>Contact</h1>
           </div>
 
-          <form className={styles.form}>
+          <form className={styles.form} onSubmit={handleSubmit}>
             <label htmlFor='name' className={styles.label}>
               Your name
             </label>
-            <input type='text' id='name' className={styles.text} />
+            <input
+              type='text'
+              required
+              id='name'
+              className={styles.text}
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
             <label htmlFor='email' className={styles.label}>
               Your email
             </label>
-            <input type='text' id='email' className={styles.text} />
+            <input
+              type='email'
+              required
+              id='email'
+              value={email}
+              className={styles.text}
+              onChange={(e) => setEmail(e.target.value)}
+            />
             <label htmlFor='message' className={styles.label}>
               Message
             </label>
-            <textarea id='message' rows='15' className={styles.textarea} />
+            <textarea
+              id='message'
+              rows='15'
+              className={styles.textarea}
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              required
+            />
             <div
               className={
                 consentError
@@ -114,6 +188,11 @@ const Contact = () => {
           </section>
         </div>
       </div>
+      {success && (
+        <div className={styles.success} onClick={() => setSuccess(false)}>
+          <p>Message sent, thank you!</p>
+        </div>
+      )}
     </div>
   )
 }

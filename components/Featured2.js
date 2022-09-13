@@ -31,7 +31,7 @@ const Featured2 = () => {
           Use <strong>custom proxy</strong> by default to expose headers and
           validate CORS. Disable proxy with one click and read resources
           directly from the browser. Postman won't let you do it - just
-          saying... ;)
+          saying...
         </p>
         <div className={styles.featuredBtnsContainer}>
           <a href='https://mobula.dev' target='_blank'>
