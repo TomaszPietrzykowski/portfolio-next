@@ -8,7 +8,7 @@ const TopHoneys = () => {
       <section className={styles.detailsUneven}>
         <div className={styles.detailsLeft}>
           <div className={styles.detailsContent}>
-            <h2 className={styles.detailsSubtitle}>e-commerce</h2>
+            <h2 className={styles.detailsSubtitle2}>e-commerce</h2>
             <h1 className={styles.detailsTitle}>Top Honeys</h1>
             <h3 className={styles.detailsWww}>
               <a href='https://tophoneys.com' target='_blank'>
@@ -16,7 +16,7 @@ const TopHoneys = () => {
               </a>
             </h3>
             <h4 className={styles.detailsSubhead}>Description</h4>
-            <p className={styles.detailsPara}>
+            <p className={styles.detailsPara2}>
               MERN stack e-commerce app running in production since June 2021.
               Webshop implements all user auth logic, provides custom profiles
               for clients and functionality-rich admin area. Fully responsive
@@ -24,7 +24,7 @@ const TopHoneys = () => {
               checkout, designed with UX and conversion in mind.
             </p>
             <h4 className={styles.detailsSubhead}>Quick links</h4>
-            <p className={styles.detailsPara}>
+            <p className={styles.detailsPara2}>
               <ul>
                 <li>
                   <a href='https://tophoneys.com' target='_blank'>
@@ -65,18 +65,18 @@ const TopHoneys = () => {
         <div className={styles.detailsRight}>
           <div className={styles.detailsContent}>
             <h4 className={styles.detailsSubhead}>Technology</h4>
-            <p className={styles.detailsPara}>
+            <p className={styles.detailsPara2}>
               Node.js application with Express server and MongoDB Atlas
               database. Mollie Payments implementation. Authentication and
               authorization with JWT, encryption with Bcrypt.js.
             </p>
-            <p className={styles.detailsPara}>
+            <p className={styles.detailsPara2}>
               React SPA frontend with Redux state management. Custom styles in
               jss applied via MaterialUI theming system. Axios used for data
               fetching.
             </p>
             <h4 className={styles.detailsSubhead}>Story behind</h4>
-            <p className={styles.detailsPara}>
+            <p className={styles.detailsPara2}>
               Designed and built for startup, Top Honeys app was kind of a
               journey for me. I initially based payments on PayPal, but I didn't
               want the app to rely too much on third party. PayPal aggressively
@@ -87,20 +87,20 @@ const TopHoneys = () => {
               product and transaction data is stored within own backend,
               allowing necessary validation without duplicating data.
             </p>
-            <p className={styles.detailsPara}>
+            <p className={styles.detailsPara2}>
               Development highlights would certainly be PayPal developer
               experience versus smooth and pleasant Mollie implementation. But
               also funny lessons learnt, like Google Translate confusing the
               world out of React, or Safari ruining my day.
             </p>
-            <p className={styles.detailsPara}>
+            <p className={styles.detailsPara2}>
               Seriously though, I enjoyed working with Redux within this project
               a lot. Somewhat repetitive, handling the state of this size gave
               me solid grip on the workflow within Redux to the point I find it
               intuitive and enjoyable.
             </p>
-            <p className={styles.detailsPara}>
-              Give it a shot:
+            <p className={styles.detailsPara2}>
+              Give it a shot:{' '}
               <a href='https://tophoneys.com' target='_blank'>
                 www.tophoneys.com
               </a>

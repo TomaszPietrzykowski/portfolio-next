@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from '../styles/Featured.module.css'
 
 const Featured1 = () => {
@@ -6,7 +7,10 @@ const Featured1 = () => {
       <div className={styles.featuredLeft}>
         <h2 className={styles.featuredSubtitle}>Featured project</h2>
         <h1 className={styles.featuredTitle}>Climate Monitor</h1>
-        <h3 className={styles.featuredWww}>www.climatemonitor.info</h3>
+        <a href='https://climatemonitor.info' target='_blank'>
+          <h3 className={styles.featuredWww}>www.climatemonitor.info</h3>
+        </a>
+
         <h4 className={styles.featuredSubhead}>Free Public API</h4>
         <p className={styles.featuredPara}>
           <strong>Public RESTful API</strong> serving json data on climate
@@ -25,9 +29,19 @@ const Featured1 = () => {
           endpoints.
         </p>
         <div className={styles.featuredBtnsContainer}>
-          <button className={styles.featuredBtn}>Project Live</button>
-          <button className={styles.featuredBtn}>Read More</button>
-          <button className={styles.featuredBtn}>All Projects</button>
+          <a href='https://climatemonitor.info' target='_blank'>
+            <button className={styles.featuredBtn}>Project Live</button>
+          </a>
+          <Link href='/projects/climatemonitor'>
+            <a>
+              <button className={styles.featuredBtn}>Read More</button>
+            </a>
+          </Link>
+          <Link href='/projects'>
+            <a>
+              <button className={styles.featuredBtn}>All Projects</button>
+            </a>
+          </Link>
         </div>
       </div>
       <div className={styles.featuredRight}></div>

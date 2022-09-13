@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from '../styles/Featured.module.css'
 
 const Featured2 = () => {
@@ -33,9 +34,19 @@ const Featured2 = () => {
           saying... ;)
         </p>
         <div className={styles.featuredBtnsContainer}>
-          <button className={styles.featuredBtn2}>Project Live</button>
-          <button className={styles.featuredBtn2}>Read More</button>
-          <button className={styles.featuredBtn2}>All Projects</button>
+          <a href='https://mobula.dev' target='_blank'>
+            <button className={styles.featuredBtn2}>Project Live</button>
+          </a>
+          <Link href='/projects/mobula'>
+            <a>
+              <button className={styles.featuredBtn2}>Read More</button>
+            </a>
+          </Link>
+          <Link href='/projects'>
+            <a>
+              <button className={styles.featuredBtn2}>All Projects</button>
+            </a>
+          </Link>
         </div>
       </div>
     </section>

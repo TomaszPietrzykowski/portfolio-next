@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from '../../styles/Projects.module.css'
 
 const ProjectsPage = () => {
@@ -28,8 +29,16 @@ const ProjectsPage = () => {
                   smoothly running in production since june 2021.
                 </p>
                 <div className={styles.projectLiBtnsContainer}>
-                  <button className={styles.projectLiBtn}>Read More</button>
-                  <button className={styles.projectLiBtn}>Project Live</button>
+                  <Link href='/projects/tophoneys'>
+                    <a>
+                      <button className={styles.projectLiBtn}>Read More</button>
+                    </a>
+                  </Link>
+                  <a href='https://tophoneys.com' target='_blank'>
+                    <button className={styles.projectLiBtn}>
+                      Project live
+                    </button>
+                  </a>
                 </div>
               </div>
               <div className={styles.projectRight}></div>
@@ -52,8 +61,18 @@ const ProjectsPage = () => {
                   json from database without limits.
                 </p>
                 <div className={styles.projectLiBtnsContainer}>
-                  <button className={styles.projectLiBtn2}>Read More</button>
-                  <button className={styles.projectLiBtn2}>Project Live</button>
+                  <Link href='/projects/climatemonitor'>
+                    <a>
+                      <button className={styles.projectLiBtn2}>
+                        Read More
+                      </button>
+                    </a>
+                  </Link>
+                  <a href='https://climatemonitor.info' target='_blank'>
+                    <button className={styles.projectLiBtn2}>
+                      Project live
+                    </button>
+                  </a>
                 </div>
               </div>
               <div className={styles.projectRight}></div>
@@ -77,8 +96,18 @@ const ProjectsPage = () => {
                   make work even easer.
                 </p>
                 <div className={styles.projectLiBtnsContainer}>
-                  <button className={styles.projectLiBtn3}>Read More</button>
-                  <button className={styles.projectLiBtn3}>Project Live</button>
+                  <Link href='/projects/mobula'>
+                    <a>
+                      <button className={styles.projectLiBtn3}>
+                        Read More
+                      </button>
+                    </a>
+                  </Link>
+                  <a href='https://mobula.dev' target='_blank'>
+                    <button className={styles.projectLiBtn3}>
+                      Project live
+                    </button>
+                  </a>
                 </div>
               </div>
               <div className={styles.projectRight}></div>

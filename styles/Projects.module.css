@@ -201,13 +201,23 @@
     color: rgb(7, 13, 19);
  }
 
- .detailsSubtitle {
+ .detailsSubtitle,
+ .detailsSubtitle2,
+ .detailsSubtitle3 {
      text-transform: uppercase;
      font-size: 1.2rem;
      font-weight: 800;
      letter-spacing: 4px;
      margin-bottom: 1.2rem;
      color: var(--accent03);
+ }
+
+ .detailsSubtitle2 {
+     color: var(--accent04);
+ }
+
+ .detailsSubtitle3 {
+     color: var(--accent02);
  }
 
  .detailsWww {
@@ -226,7 +236,9 @@
     margin: 4rem 0 2rem;
 }
 
-.detailsPara {
+.detailsPara,
+.detailsPara2,
+.detailsPara3 {
     margin-bottom: 2rem;
     font-size: 1.1rem;
     letter-spacing: .5px;
@@ -234,15 +246,29 @@
     font-weight: 400;
     color: var(--textPrimary);
 }
-.detailsPara ul li {
+.detailsPara ul li,
+.detailsPara2 ul li,
+.detailsPara3 ul li {
     font-weight: 500;
     margin-bottom: .7rem;
     color: var(--textSecondary)
 }
-.detailsPara ul li:hover {
+.detailsPara ul li:hover,
+.detailsPara a:hover {
     color: var(--accent03);
     text-decoration: underline;
 }
+.detailsPara2 ul li:hover,
+.detailsPara2 a:hover {
+    color: var(--accent04);
+    text-decoration: underline;
+}
+.detailsPara3 ul li:hover,
+.detailsPara3 a:hover {
+    color: var(--accent02);
+    text-decoration: underline;
+}
+
 .imageTop {
     width: 100%;
 }

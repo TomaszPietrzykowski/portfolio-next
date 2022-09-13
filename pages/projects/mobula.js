@@ -8,7 +8,7 @@ const Mobula = () => {
       <section className={styles.detailsUneven}>
         <div className={styles.detailsLeft}>
           <div className={styles.detailsContent}>
-            <h2 className={styles.detailsSubtitle}>HTTP/API client</h2>
+            <h2 className={styles.detailsSubtitle3}>HTTP/API client</h2>
             <h1 className={styles.detailsTitle}>Mobula API</h1>
             <h3 className={styles.detailsWww}>
               <a href='https://mobula.dev' target='_blank'>
@@ -16,15 +16,17 @@ const Mobula = () => {
               </a>
             </h3>
             <h4 className={styles.detailsSubhead}>Description</h4>
-            <p className={styles.detailsPara}>
-              MERN stack e-commerce app running in production since June 2021.
-              Webshop implements all user auth logic, provides custom profiles
-              for clients and functionality-rich admin area. Fully responsive
-              app with wide scope of supported payment methods. Fast, 3-steps
-              checkout, designed with UX and conversion in mind.
+            <p className={styles.detailsPara3}>
+              Browser based HTTP/API client for rapid testing of endpoints.
+              Let's you bypass CORS, send JSON body from the browser and apply
+              custom headers and params. App returns request time, size and
+              status, exposes all headers and displays response body. Gives you
+              project-scoped environmental variables for faster workflow.
+              Creating a free account will let you organize your work in
+              projects and folders and save it for easy access from anywhere.
             </p>
             <h4 className={styles.detailsSubhead}>Quick links</h4>
-            <p className={styles.detailsPara}>
+            <p className={styles.detailsPara3}>
               <ul>
                 <li>
                   <a href='https://mobula.dev' target='_blank'>
@@ -65,43 +67,35 @@ const Mobula = () => {
         <div className={styles.detailsRight}>
           <div className={styles.detailsContent}>
             <h4 className={styles.detailsSubhead}>Technology</h4>
-            <p className={styles.detailsPara}>
+            <p className={styles.detailsPara3}>
               Node.js/Express server, proxy dealing with Cross Origin Resourse
               Sharing and exposing data to the browser. User data and work
               stored in MongoDB database. JWT authentication.
             </p>
-            <p className={styles.detailsPara}>
-              Next.js-powered React frontend. Written in TypeScript and styled
-              with custom css modules.
+            <p className={styles.detailsPara3}>
+              Next.js-powered React frontend with Redux state management.
+              Written in TypeScript and styled with custom css modules.
             </p>
             <h4 className={styles.detailsSubhead}>Story behind</h4>
-            <p className={styles.detailsPara}>
-              Designed and built for startup, Top Honeys app was kind of a
-              journey for me. I initially based payments on PayPal, but I didn't
-              want the app to rely too much on third party. PayPal aggressively
-              promotes it's client-side implementation, which can be secure only
-              if PayPal stores data. Server-side implementation turned out to be
-              flagged and discouraged. I ended up implementing Mollie Payments
-              (best decision ever) and designing architecture where client,
-              product and transaction data is stored within own backend,
-              allowing necessary validation without duplicating data.
+            <p className={styles.detailsPara3}>
+              Inspired by software like Postman and Insomnia I decided to build
+              a tool similar in functionality but less bloathed and more
+              accessible. Meant for rapid testing and design, Mobula has
+              intuitive, recognizable interface and provides resonable, useful
+              set of testing functionalities, while staying light-weight and
+              easy to work with.
             </p>
-            <p className={styles.detailsPara}>
-              Development highlights would certainly be PayPal developer
-              experience versus smooth and pleasant Mollie implementation. But
-              also funny lessons learnt, like Google Translate confusing the
-              world out of React, or Safari ruining my day.
+            <p className={styles.detailsPara3}>
+              Development of Mobula app was very satisfying for me for two main
+              resons. First one would be the TypeScript, which turned out to be
+              very rewarding to work with. And second - deep dive into REST
+              architecture, that gave me a lot of confidence in fullstack
+              development and solid understanding of computer networking.
             </p>
-            <p className={styles.detailsPara}>
-              Seriously though, I enjoyed working with Redux within this project
-              a lot. Somewhat repetitive, handling the state of this size gave
-              me solid grip on the workflow within Redux to the point I find it
-              intuitive and enjoyable.
-            </p>
-            <p className={styles.detailsPara}>
-              Give it a shot:
-              <a href='https://tophoneys.com' target='_blank'>
-                www.tophoneys.com
+            <p className={styles.detailsPara3}>
+              Give it a shot:{' '}
+              <a href='https://mobula.dev' target='_blank'>
+                www.mobula.dev
               </a>
             </p>
           </div>
