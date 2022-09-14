@@ -12,7 +12,7 @@ const Contact = () => {
   const [message, setMessage] = useState('')
   // submit state
   const [loading, setLoading] = useState(false)
-  const [success, setSuccess] = useState(true)
+  const [success, setSuccess] = useState(false)
 
   // email controller
   const sendEmail = async (name, email, message) => {
@@ -24,7 +24,7 @@ const Contact = () => {
         },
       }
       const { data } = await axios.post(
-        'http://localhost:5000',
+        'http://localhost:5000/email',
         { name, email, message },
         config
       )
@@ -40,7 +40,10 @@ const Contact = () => {
         setTimeout(() => setSuccess(false), 2000)
       }
     } catch (error) {
+      // TODO - error handling
       console.log(error)
+      // for testing, remove
+      setTimeout(() => setLoading(false), 3000)
     }
   }
 
@@ -49,10 +52,10 @@ const Contact = () => {
     e.preventDefault()
     if (legalConsent) {
       sendEmail(name, email, message)
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth',
-      })
+      //for testing only
+      setSuccess(true)
+      setTimeout(() => setSuccess(false), 2000)
+      // ---
     } else {
       setConsentError(true)
     }
@@ -128,9 +131,15 @@ const Contact = () => {
                 email
               </label>
             </div>
-            <button type='submit' className={styles.submitBtn}>
-              Send message
-            </button>
+            {loading ? (
+              <div className={styles.loaderContainer}>
+                <img src='/spinner.svg' className={styles.loader} />
+              </div>
+            ) : (
+              <button type='submit' className={styles.submitBtn}>
+                Send message
+              </button>
+            )}
           </form>
           <section className={styles.letsConnect}>
             <h2>Let's connect</h2>

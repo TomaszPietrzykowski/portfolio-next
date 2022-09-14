@@ -113,7 +113,8 @@ padding: .5rem;
  .checkboxLabelError {
 color: var(--error);
  }
-.submitBtn {
+.submitBtn,
+.loaderBtn {
     padding: .8rem 2.2rem;
     margin-right: auto;
     cursor: pointer;
@@ -198,3 +199,15 @@ color: var(--error);
     color: white;
     cursor: pointer;
 }   
+.loaderBtn {
+   background: var(--bg-dark01);
+   border-color: var(--bg-dark01);
+   padding: 0;
+   margin-left: 4rem
+}
+.loaderContainer {
+    margin-left: 4.5rem;
+}
+.loader {
+    height: 2.7rem;
+}
