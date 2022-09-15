@@ -52,10 +52,6 @@ const Contact = () => {
     e.preventDefault()
     if (legalConsent) {
       sendEmail(name, email, message)
-      //for testing only
-      setSuccess(true)
-      setTimeout(() => setSuccess(false), 2000)
-      // ---
     } else {
       setConsentError(true)
     }
@@ -117,7 +113,7 @@ const Contact = () => {
                 checked={legalConsent}
                 onChange={(e) => {
                   setLegalConsent(e.target.checked)
-                  setConsentError(null)
+                  setConsentError(false)
                 }}
               />
               <label

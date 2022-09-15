@@ -54,6 +54,7 @@ const Navbar = () => {
                 </svg>
               </a>
             </li>
+            <li className={styles.hamburger}> = </li>
           </ul>
         </nav>
       </div>
