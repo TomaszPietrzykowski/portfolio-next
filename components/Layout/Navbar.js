@@ -1,7 +1,11 @@
-import styles from '../../styles/Layout.module.css'
+import { useState } from 'react'
 import Link from 'next/link'
 
+import styles from '../../styles/Layout.module.css'
+
 const Navbar = () => {
+  const [openDrawer, setOpenDrawer] = useState(false)
+
   return (
     <header className={styles.navbar}>
       <div className={styles.flex}>
@@ -54,9 +58,30 @@ const Navbar = () => {
                 </svg>
               </a>
             </li>
-            <li className={styles.hamburger}> = </li>
+            <li
+              className={styles.hamburger}
+              onClick={() => setOpenDrawer(!openDrawer)}
+            >
+              <div className={styles.hamburgerIcon} />
+            </li>
           </ul>
         </nav>
+      </div>
+      <div className={styles.drawer}>
+        <ul className={styles.drawerNav}>
+          <li>
+            <Link href='/'>Home</Link>
+          </li>
+          <li>
+            <Link href='/projects'>My Work</Link>
+          </li>
+          <li>
+            <Link href='/about'>About</Link>
+          </li>
+          <li>
+            <Link href='/contact'>Contact</Link>
+          </li>
+        </ul>
       </div>
     </header>
   )

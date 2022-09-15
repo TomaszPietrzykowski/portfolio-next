@@ -18,10 +18,27 @@
 }
 .hamburger {
   display: none;
+  padding: 0 .5rem .3rem .5rem;
 }
-
-
-
+.hamburgerIcon,
+.hamburgerIcon::after,
+.hamburgerIcon::before {
+  width: 28px;
+  height: 2px;
+  background: var(--accent01);
+  border-radius: 20rem;
+  position: relative;
+}
+.hamburgerIcon::before {
+  position: absolute;
+  content: "";
+  top: -9px;
+}
+.hamburgerIcon::after {
+  position: absolute;
+  content: "";
+  top: 9px;
+}
 .nav a {
   padding: 0.5rem 1rem;
   margin: 0.1rem;
@@ -64,6 +81,21 @@
 }
 
 /* 
+   Drawer
+*/
+
+.drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  /* width: 100%; */
+  width: 0%;
+  background: red;
+  overflow: hidden;
+}
+
+/* 
    Responsive
 */
 
@@ -97,6 +129,9 @@
     outline: 1px solid greenyellow;
     display: none;
   }
+  .flex {
+    padding: 0 0 0 1.5rem;
+  }
   .hamburger {
     display: block;
   }
@@ -114,7 +149,7 @@
 
 @media(max-width: 420px) {
   .flex {
-    padding: 0rem 1rem;
+    padding: 0rem .5rem 0rem 1rem;
   }
   .navbar {
     padding: .5rem 0;
