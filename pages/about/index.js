@@ -12,7 +12,7 @@ const About = () => {
 
         <h3 className={styles.subtitle}>who am i</h3>
         <p>
-          Hi, I am Tomasz, polish developer based in Amsterdam, NL. <br />
+          Hi, I am Tomasz, polish developer, based in Amsterdam, NL. <br />
           <br />I have been building web applications since 2019. I have built,
           deployed and I am maintaining multiple functional apps, like content
           management system, public API or e-commerce site. My applications are
@@ -22,19 +22,19 @@ const About = () => {
         <p>
           My web biom of choice is Node.js environment with React, Next.js and
           Redux at the frontend. I use javascript and typescript. I build
-          RESTful API's with Node and Express. I write custom css/scss and have
+          RESTful API's with Node and Express. I write custom css and have
           experience with frameworks like Material UI. I work with MongoDB and
           Mongoose, use Git and Github for code and Asana for project
-          management. I make mockups in Figma (edit: let's see about that
-          one...) and my favourite IDE is VSCode. Having that all said, as a
-          self-thaught developer I always am eager to learn new technologies.
+          management. I make mockups in Figma (edit: let's see about that one
+          though...) and my favourite IDE is VSCode. Having that all said, as a
+          self-thaught developer, I am eager to learn new technologies.
         </p>
         <h3 className={styles.subtitle}>interests</h3>
         <p>
           All things React. I consider Next.js framework very exciting to work
           with. Other than that: "backend-of-the-frontend", state mangement,
-          data flow through components tree. Not that much of a designer, I am
-          particularily interested in frontend logic and data management.
+          data flow through component tree. Not that much of a designer, I am
+          particularily interested in frontend logic.
           <br />
           <br />
           Another topic I find really interesting is communication between
@@ -45,7 +45,7 @@ const About = () => {
         </p>
         <h3 className={styles.subtitle}>goal</h3>
         <p>
-          Currently looking for an entry level position in web develepment
+          Currently looking for an entry level position in web development
           field. <br />
           <br />
           Are you hiring? Let's get in touch! Connect on{' '}
