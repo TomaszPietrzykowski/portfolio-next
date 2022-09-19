@@ -24,6 +24,7 @@
 }
 .titleWrapper {
     position: relative;
+    /* outline: 1px solid green; */
 }
 .titleWrapper::before {
     position: absolute;
@@ -42,12 +43,31 @@
     background-position: center;
     opacity: .3;
 }
+.titleWrapper::after {
+    content: "";
+    position: absolute;
+    top: -30px;
+    right: -90px;
+    height: 240px;
+    width: 240px;
+    background-image: url("/avatar.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    opacity: .95;
+    box-shadow: 2px 2px 22px var(--shadow01)
+}
 .subtitle {
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 1rem;
     color: var(--accent03);
 }
+
+/* .content {
+    outline: 1px solid green;
+} */
 .content p {
     font-size: 1.2rem;
     line-height: 1.5;
