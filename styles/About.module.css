@@ -72,5 +72,12 @@
     font-size: 1.2rem;
     line-height: 1.5;
     margin-bottom: 4rem;
-    letter-spacing: .5px;
+    /* letter-spacing: .2px; */
+}
+.content p a {
+    font-weight: 600;
+}
+.content p a:hover {
+    color: var(--accent01);
+    text-decoration: underline;
 }
