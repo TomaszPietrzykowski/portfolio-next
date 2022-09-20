@@ -24,7 +24,7 @@
 .hamburgerIcon::after,
 .hamburgerIcon::before {
   width: 28px;
-  height: 2px;
+  height: 2.5px;
   background: var(--accent01);
   border-radius: 20rem;
   position: relative;
@@ -113,6 +113,7 @@
   .logo {
     font-size: 1.2rem;
     font-weight: 500;
+    padding-left: .5rem;
   }
 
   .nav svg {
@@ -143,16 +144,13 @@
     font-weight: 500;
   }
   .navbar {
-    padding: .7rem .5rem .5rem 1rem;;
+    padding: .7rem .5rem .5rem 1rem;
   }
 }
 
 @media(max-width: 420px) {
-  .flex {
-    padding: 0rem .5rem 0rem 1rem;
-  }
   .navbar {
-    padding: .5rem 0;
+    padding: .7rem .5rem .5rem .5rem;
   }
 }
 
@@ -165,7 +163,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  /* background-color: black; */
+  background: linear-gradient(217deg, var(--bg-dark02), rgba(0,0,0,1) 100%);
+
   padding: 1rem 0;
 }
 
@@ -214,7 +214,7 @@
 @media(max-width: 420px) {
   .footerContainer {
     justify-content: flex-start;
-    background-color: black;
+    background: linear-gradient(217deg, var(--bg-dark02), rgba(0,0,0,1) 100%);
     padding: 1rem;
     position: relative;
   }
