@@ -10,7 +10,7 @@ const Featured1 = () => {
         <a href='https://climatemonitor.info' target='_blank'>
           <h3 className={styles.featuredWww}>www.climatemonitor.info</h3>
         </a>
-
+        <div className={styles.imgMobile} />
         <h4 className={styles.featuredSubhead}>Free Public API</h4>
         <p className={styles.featuredPara}>
           <strong>Public RESTful API</strong> serving json data on climate

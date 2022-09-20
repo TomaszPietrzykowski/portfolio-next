@@ -1,6 +1,7 @@
 /* ------ rework layout grid ------------------------ */
 .featured {
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
     width: 100%;
     margin: auto;
     margin-top: 8rem;
@@ -11,7 +12,6 @@
     margin-left: auto;
 }
 .featuredRight {  
-    width: 50%;
     background-image: url("../public/cm-project.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -104,3 +104,83 @@
     border: 2px solid var(--accent02);  
     background-color: var(--accent02);  
 }
+.imgMobile {
+    display: none;
+}
+
+/* 
+   Responsive
+*/
+
+@media (max-width: 1300px) {
+    .featured {
+        grid-template-columns: 66% 34%;
+    }
+    .featuredLeft {
+        max-width: unset;
+    }
+}  
+
+@media (max-width: 900px) {
+    .featured {
+        margin-top: 5rem;
+        padding: 0 2rem;
+        grid-template-columns: 66% 34%;
+    }
+    .featuredLeft {
+        padding: 0;
+    }
+    .featuredTitle {
+        font-size: 2.6rem;
+        font-weight: 600;
+        line-height: 1;
+    }
+    .featuredSubtitle,
+    .featuredSubtitle2 {
+        font-size: 1rem;
+        font-weight: 800;
+        letter-spacing: 2px;
+        margin-bottom: 1rem;
+    }
+    .featuredWww {
+        font-size: 1rem;
+        letter-spacing: 1px;
+        margin: 0.5rem 0 5rem 0;
+    }
+}  
+@media (max-width: 680px) {
+    .featured {
+        margin-top: 5rem;
+        padding: 0 2rem;
+        grid-template-columns: 100%;
+    }
+    .imgMobile {
+        display: block;
+        /* width: 100%; */
+        height: 90vw;
+        background-image: url("../public/cm-project.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .featuredRight {
+        display: none;
+    }
+    .featuredTitle {
+        font-size: 2.6rem;
+        font-weight: 600;
+        line-height: 1;
+    }
+    .featuredSubtitle,
+    .featuredSubtitle2 {
+        font-size: 1rem;
+        font-weight: 800;
+        letter-spacing: 2px;
+        margin-bottom: 1rem;
+    }
+    .featuredWww {
+        font-size: 1rem;
+        letter-spacing: 1px;
+        margin: 0.5rem 0;
+    }
+}  
