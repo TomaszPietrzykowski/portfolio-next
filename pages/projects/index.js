@@ -9,7 +9,6 @@ const ProjectsPage = () => {
           <div className={styles.titleWrapper}>
             <h1 className={styles.title}>My Work</h1>
           </div>
-
           <ul className={styles.projectsList}>
             <li>
               <div className={styles.projectLeft}></div>
