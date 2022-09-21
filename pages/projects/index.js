@@ -114,8 +114,6 @@ const ProjectsPage = () => {
           </ul>
         </div>
       </div>
-
-      <div className={styles.imageContainer}></div>
     </div>
   )
 }
