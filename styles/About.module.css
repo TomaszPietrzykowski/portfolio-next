@@ -1,83 +1,179 @@
 .container {
-    margin-top: 4rem;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 33% 67%;
+  margin-top: 4rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 33% 67%;
 }
 .imageContainer {
-    height: 100%;
-    background-image: url("../public/about-me.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  height: 100%;
+  background-image: url('../public/about-me.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .content {
-    max-width: 870px;
-    margin-right: auto;
-    padding: 6rem;
+  max-width: 870px;
+  margin-right: auto;
+  padding: 6rem;
 }
 .title {
-    margin: 0 0 14rem 0;
-    font-size: 3rem;
-    position: relative;
-    z-index: 1;
+  margin: 0 0 14rem 0;
+  font-size: 3rem;
+  position: relative;
+  z-index: 1;
 }
 .titleWrapper {
-    position: relative;
-    /* outline: 1px solid green; */
+  position: relative;
+  /* outline: 1px solid green; */
 }
 .titleWrapper::before {
-    position: absolute;
-    content: "";
-    z-index: 0;
+  position: absolute;
+  content: '';
+  z-index: 0;
 
-    top: -4rem;
-    left: 12rem;
+  top: -4rem;
+  left: 12rem;
 
-    height: 16rem;
-    width: 8rem;
+  height: 16rem;
+  width: 8rem;
 
-    background-image: url("../public/decorator-light.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: .3;
+  background-image: url('../public/decorator-light.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
 }
 .titleWrapper::after {
-    content: "";
-    position: absolute;
-    top: -30px;
-    right: -90px;
-    height: 240px;
-    width: 240px;
-    background-image: url("/avatar.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-    opacity: .95;
-    box-shadow: 2px 2px 22px var(--shadow01)
+  content: '';
+  position: absolute;
+  top: -30px;
+  right: -90px;
+  height: 240px;
+  width: 240px;
+  background-image: url('/avatar.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  opacity: 0.95;
+  box-shadow: 2px 2px 22px var(--shadow01);
 }
 .subtitle {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 1rem;
-    color: var(--accent03);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  color: var(--accent03);
 }
-
-/* .content {
-    outline: 1px solid green;
-} */
 .content p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    margin-bottom: 4rem;
-    /* letter-spacing: .2px; */
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 4rem;
+  /* letter-spacing: .2px; */
 }
 .content p a {
-    font-weight: 600;
+  font-weight: 600;
 }
 .content p a:hover {
-    color: var(--accent01);
-    text-decoration: underline;
+  color: var(--accent01);
+  text-decoration: underline;
+}
+.imgMobile {
+  display: none;
+}
+
+/* 
+ *   Responsive -------------------------------------
+ */
+
+@media (max-width: 1200px) {
+  .content {
+    padding: 6rem 2rem;
+  }
+  .titleWrapper::after {
+    top: -30px;
+    right: -10px;
+    height: 240px;
+    width: 240px;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    margin-top: 3.5rem;
+    grid-template-columns: 25% 75%;
+  }
+  .content {
+    padding: 4rem 1.5rem;
+  }
+  .titleWrapper::before {
+    top: -4rem;
+    left: 10rem;
+
+    height: 12rem;
+    width: 6rem;
+    opacity: 0.2;
+  }
+  .titleWrapper::after {
+    top: -30px;
+    right: -10px;
+    height: 200px;
+    width: 200px;
+  }
+  .title {
+    margin: 0 0 10rem 0;
+    font-size: 2.6rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+  }
+  .content p {
+    font-size: 1rem;
+    margin-bottom: 4rem;
+  }
+}
+@media (max-width: 680px) {
+  .container {
+    margin-top: 3rem;
+    grid-template-columns: 100%;
+  }
+  .content {
+    padding: 3rem 1.5rem;
+  }
+  .imageContainer {
+    display: none;
+  }
+  .title {
+    margin: 0 0 8rem 0;
+    font-size: 2.2rem;
+  }
+  .titleWrapper::after {
+    top: -30px;
+    right: -10px;
+    height: 160px;
+    width: 160px;
+  }
+  .titleWrapper::before {
+    top: -4rem;
+    left: 8rem;
+
+    height: 10rem;
+    width: 5rem;
+    opacity: 0.2;
+  }
+  .imgMobile {
+    display: block;
+    margin: 0rem -1.5rem 2rem;
+  }
+}
+@media (max-width: 420px) {
+  .title {
+    font-size: 2rem;
+  }
+  .titleWrapper::after {
+    top: -30px;
+    right: -10px;
+    height: 120px;
+    width: 120px;
+  }
 }

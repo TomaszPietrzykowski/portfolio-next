@@ -1,5 +1,6 @@
 import styles from '../../styles/About.module.css'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const About = () => {
   return (
@@ -18,6 +19,7 @@ const About = () => {
           management system, public API or e-commerce site. My applications are
           secure, user friendly and SEO optimized.
         </p>
+
         <h3 className={styles.subtitle}>technologies</h3>
         <p>
           My web biom of choice is Node.js environment with React, Next.js and
@@ -29,6 +31,15 @@ const About = () => {
           though...) and my favourite IDE is VSCode. Having that all said, as a
           self-thaught developer, I am eager to learn new technologies.
         </p>
+        <div className={styles.imgMobile}>
+          <Image
+            src='/about-me.png'
+            alt='developer behind pc -  van goghs starry night style painting'
+            width={680}
+            height={680}
+            className={styles.image}
+          />
+        </div>
         <h3 className={styles.subtitle}>interests</h3>
         <p>
           All things React. I consider Next.js framework very exciting to work
