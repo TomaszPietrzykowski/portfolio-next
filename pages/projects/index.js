@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../../styles/Projects.module.css'
 
@@ -11,11 +12,28 @@ const ProjectsPage = () => {
           </div>
           <ul className={styles.projectsList}>
             <li>
-              <div className={styles.projectLeft}></div>
+              <div className={styles.projectLeft}>
+                <Image
+                  src='/tophoneys-logo.png'
+                  alt='project preview'
+                  width={400}
+                  height={217}
+                  className={styles.logo}
+                />
+              </div>
               <div className={styles.projectDescription}>
                 <h4 className={styles.projectSubtitle}>custom e-commerce</h4>
                 <h2 className={styles.projectTitle}>Top Honeys</h2>
                 <div className={styles.projectWww}>www.tophoneys.com</div>
+                <div className={styles.imgMobile}>
+                  <Image
+                    src='/cm-project.png'
+                    alt='project preview'
+                    width={680}
+                    height={382}
+                    className={styles.image}
+                  />
+                </div>
                 <p>
                   Fully custom MERN stack e-commerce with rich admin
                   functionalities. One of main goals was the ease of switching
@@ -43,11 +61,28 @@ const ProjectsPage = () => {
               <div className={styles.projectRight}></div>
             </li>
             <li>
-              <div className={styles.projectLeft2}></div>
+              <div className={styles.projectLeft}>
+                <Image
+                  src='/cm-logo.png'
+                  alt='project preview'
+                  width={400}
+                  height={177}
+                  className={styles.logo}
+                />
+              </div>
               <div className={styles.projectDescription}>
                 <h4 className={styles.projectSubtitle2}>Public API</h4>
                 <h2 className={styles.projectTitle}>Climate Monitor</h2>
                 <div className={styles.projectWww}>www.climatemonitor.info</div>
+                <div className={styles.imgMobile}>
+                  <Image
+                    src='/cm-project.png'
+                    alt='project preview'
+                    width={680}
+                    height={382}
+                    className={styles.image}
+                  />
+                </div>
                 <p>
                   Free public REST API, comprehensive and easy to use. Serving
                   json data on earth CO<sub>2</sub> and other climate factors.
@@ -77,11 +112,28 @@ const ProjectsPage = () => {
               <div className={styles.projectRight}></div>
             </li>
             <li>
-              <div className={styles.projectLeft3}></div>
+              <div className={styles.projectLeft}>
+                <Image
+                  src='/cm-logo.png'
+                  alt='project preview'
+                  width={400}
+                  height={177}
+                  className={styles.logo}
+                />
+              </div>
               <div className={styles.projectDescription}>
                 <h4 className={styles.projectSubtitle3}>HTTP/API client</h4>
                 <h2 className={styles.projectTitle}>Mobula API</h2>
                 <div className={styles.projectWww}>www.mobula.dev</div>
+                <div className={styles.imgMobile}>
+                  <Image
+                    src='/cm-project.png'
+                    alt='project preview'
+                    width={680}
+                    height={382}
+                    className={styles.image}
+                  />
+                </div>
                 <p>
                   Browser-based HTTP/API client, inspierd by software like
                   Postman and Insomnia. Simple and light-weight, built for quick

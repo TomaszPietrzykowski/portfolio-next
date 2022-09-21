@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
   --isabelline: rgba(247, 246, 243, 1);
   --white: rgba(255, 255, 255, 1);
-  
+
   --textPrimary: rgba(5, 9, 14, 0.85);
   --textSecondary: rgba(5, 9, 14, 0.6);
 
@@ -18,8 +18,9 @@
   --success: rgb(2, 160, 8);
   --error: rgb(220, 0, 0);
 
-  --shadow01: rgba(1, 46, 56, .3);
-  --shadow02: rgba(1, 46, 56, .6);
+  --shadow00: rgba(1, 46, 56, 0.2);
+  --shadow01: rgba(1, 46, 56, 0.3);
+  --shadow02: rgba(1, 46, 56, 0.6);
 }
 
 * {
@@ -31,7 +32,7 @@
 html,
 body {
   overflow-x: hidden;
-  font-family: "Epilogue", sans-serif;
+  font-family: 'Epilogue', sans-serif;
 }
 
 ul {
