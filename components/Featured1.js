@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import styles from '../styles/Featured.module.css'
 
 const Featured1 = () => {
@@ -10,7 +11,15 @@ const Featured1 = () => {
         <a href='https://climatemonitor.info' target='_blank'>
           <h3 className={styles.featuredWww}>www.climatemonitor.info</h3>
         </a>
-        <div className={styles.imgMobile} />
+        <div className={styles.imgMobile}>
+          <Image
+            src='/cm-project.png'
+            alt='project preview'
+            width={680}
+            height={382}
+            className={styles.image}
+          />
+        </div>
         <h4 className={styles.featuredSubhead}>Free Public API</h4>
         <p className={styles.featuredPara}>
           <strong>Public RESTful API</strong> serving json data on climate
@@ -44,7 +53,15 @@ const Featured1 = () => {
           </Link>
         </div>
       </div>
-      <div className={styles.featuredRight}></div>
+      <div className={styles.featuredRight}>
+        <Image
+          src='/cm-project.png'
+          alt='project preview'
+          width={960}
+          height={540}
+          className={styles.image}
+        />
+      </div>
     </section>
   )
 }

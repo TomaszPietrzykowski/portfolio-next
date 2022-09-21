@@ -1,14 +1,34 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import styles from '../styles/Featured.module.css'
 
 const Featured2 = () => {
   return (
-    <section className={styles.featured} style={{ marginBottom: '12rem' }}>
-      <div className={styles.featuredRight}></div>
+    <section className={styles.featured}>
+      <div className={styles.featuredRight}>
+        <Image
+          src='/cm-project.png'
+          alt='project preview'
+          width={960}
+          height={540}
+          className={styles.image}
+        />
+      </div>
       <div className={styles.featuredLeft2}>
         <h2 className={styles.featuredSubtitle2}>Featured project</h2>
         <h1 className={styles.featuredTitle}>Mobula API</h1>
-        <h3 className={styles.featuredWww}>www.mobula.dev</h3>
+        <a href='https://mobula.dev' target='_blank'>
+          <h3 className={styles.featuredWww}>www.mobula.dev</h3>
+        </a>
+        <div className={styles.imgMobile}>
+          <Image
+            src='/cm-project.png'
+            alt='project preview'
+            width={680}
+            height={382}
+            className={styles.image}
+          />
+        </div>
         <h4 className={styles.featuredSubhead}>
           Browser based HTTP/API client
         </h4>
