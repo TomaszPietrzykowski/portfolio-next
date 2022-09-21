@@ -1,213 +1,353 @@
 .container {
-    margin-top: 4rem;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 33% 67%;
+  margin-top: 4rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 33% 67%;
 }
 .imageContainer {
-    height: 100%;
-    background-image: url("../public/contact.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  height: 100%;
+  background-image: url('../public/contact.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .contentContainer {
-    width: 100%;
-    background-color: var(--bg-dark01);
-    color: white;
+  width: 100%;
+  background-color: var(--bg-dark01);
+  color: white;
 }
 .content {
-    max-width: 870px;
-    margin-right: auto;
-    padding: 6rem;
+  max-width: 870px;
+  margin-right: auto;
+  padding: 6rem;
 }
 .title {
-    margin: 0 0 12rem 0;
-    font-size: 3rem;
-    position: relative;
-    z-index: 1;
+  margin: 0 0 6rem 0;
+  font-size: 3rem;
+  position: relative;
+  z-index: 1;
 }
 .titleWrapper {
-    position: relative;
+  position: relative;
 }
 .titleWrapper::before {
-    position: absolute;
-    content: "";
-    z-index: 0;
+  position: absolute;
+  content: '';
+  z-index: 0;
 
-    top: -4rem;
-    left: 2rem;
+  top: -4rem;
+  left: 2rem;
 
-    height: 16rem;
-    width: 8rem;
+  height: 16rem;
+  width: 8rem;
 
-    background-image: url("../public/decorator-dark.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: .3;
+  background-image: url('../public/decorator-dark.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
 }
 .content p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    margin-bottom: 1rem;
-    letter-spacing: .5px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
 }
 
 /* Email form */
 
 .form {
-    display: flex;
-    flex-direction: column;
-    padding: 0 4rem 0 0;
-    margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 4rem 0 0;
+  margin-bottom: 10rem;
 }
 .label {
-    margin: 2.2rem 0 .4rem 0;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--accent01);
+  margin: 2.2rem 0 0.4rem 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--accent01);
 }
 .text,
 .textarea {
-    padding: .8rem;
-    border: none;
-    outline: none;
-    font-size: 1.2rem;
-    border-radius: 4px;
-    color: var(--bg-dark02);
-    font-family: inherit;
+  padding: 0.8rem;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  color: var(--bg-dark02);
+  font-family: inherit;
 }
 .text {
-    max-width: 400px;
+  max-width: 400px;
 }
- /* checbox sandbox */
- .checkboxContainer,
- .checkboxContainerError {
-    margin: 2rem 0;
-    display: flex;
-    justify-content: "flex-start";
-    width: "100%";
-    max-width: 560;
-    padding: .5rem;
-    border: 1px solid var(--bg-dark02);
-    border-radius: 4px;
- }
- .checkbox {
-    cursor: pointer;
-    background-color: var(--success);
-  }
- .checkbox:checked {
-    background-color: var(--success);
-  }
- .checkboxContainerError {
-    border: 1px solid var(--error);
- }
- .checkboxLabel,
- .checkboxLabelError {
-font-size: .9rem;
-letter-spacing: 1px;
-font-family: inherit;
-padding: .5rem;
- }
- .checkboxLabelError {
-color: var(--error);
- }
+/* checbox sandbox */
+.checkboxContainer,
+.checkboxContainerError {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: 'flex-start';
+  width: '100%';
+  max-width: 560;
+  padding: 0.5rem;
+  border: 1px solid var(--bg-dark02);
+  border-radius: 4px;
+}
+.checkbox {
+  cursor: pointer;
+  background-color: var(--success);
+}
+.checkbox:checked {
+  background-color: var(--success);
+}
+.checkboxContainerError {
+  border: 1px solid var(--error);
+}
+.checkboxLabel,
+.checkboxLabelError {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  font-family: inherit;
+  padding: 0.5rem;
+}
+.checkboxLabelError {
+  color: var(--error);
+}
 .submitBtn,
 .loaderBtn {
-    padding: .8rem 2.2rem;
-    margin-right: auto;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: 1.1rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    background: var(--accent01);
-    border-radius: 5px;
-    transition: all 0.2s ease-in-out;
-    color: white;
+  padding: 0.8rem 2.2rem;
+  margin-right: auto;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: var(--accent01);
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  color: white;
 
-    border: 2px solid var(--accent01);  
+  border: 2px solid var(--accent01);
 }
 .submitBtn:hover {
-    color: var(--bg-dark01);
+  color: var(--bg-dark01);
 }
 /* Let's connect! */
 
 .letsConnect {
-    margin: 10rem 0 4rem;
+  margin: 10rem 0 4rem;
 }
 .letsConnect h2 {
-    font-size: 2.2rem;
-    font-weight: 600;
-    margin-bottom: 3rem;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
 }
 .letsConnect p {
-    font-size: 1.1rem;
-    margin-bottom: 1.8rem;
-    cursor: pointer;
-    fill: white;
-    display: flex;
-    align-items: center;
+  font-size: 1.1rem;
+  margin-bottom: 1.8rem;
+  cursor: pointer;
+  fill: white;
+  display: flex;
+  align-items: center;
 }
 .letsConnect a {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .letsConnect a span {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 .letsConnect p:hover {
-    color: var(--accent01);
-    fill: var(--accent01);
+  color: var(--accent01);
+  fill: var(--accent01);
 }
 .liIcon {
-    fill: inherit;
+  fill: inherit;
 }
 
 /* Success Popup */
 
 .success {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .success p {
-    background: var(--success);
-    color: white;
-    padding: 2rem 5rem 2rem 4rem;
-    letter-spacing: 1px;
-    font-weight: 500;
-    border: 1px solid var(--success);
-    border-radius: 4px;
-    box-shadow: 4px 4px 24px var(--shadow02);
-    position: relative;
+  background: var(--success);
+  color: white;
+  padding: 2rem 5rem 2rem 4rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  border: 1px solid var(--success);
+  border-radius: 4px;
+  box-shadow: 4px 4px 24px var(--shadow02);
+  position: relative;
 }
 .success p::after {
-    position: absolute;
-    top: 4px;
-    right: 7px;
-    content: "x";
-    padding: .1rem;
-    color: white;
-    cursor: pointer;
-}   
+  position: absolute;
+  top: 4px;
+  right: 7px;
+  content: 'x';
+  padding: 0.1rem;
+  color: white;
+  cursor: pointer;
+}
 .loaderBtn {
-   background: var(--bg-dark01);
-   border-color: var(--bg-dark01);
-   padding: 0;
-   margin-left: 4rem
+  background: var(--bg-dark01);
+  border-color: var(--bg-dark01);
+  padding: 0;
+  margin-left: 4rem;
 }
 .loaderContainer {
-    margin-left: 4.5rem;
+  margin-left: 4.5rem;
 }
 .loader {
-    height: 2.7rem;
+  height: 2.7rem;
+}
+.imgMobile {
+  display: none;
+}
+
+/* 
+ *   Responsive -------------------------------------
+ */
+
+@media (max-width: 1200px) {
+  .content {
+    padding: 6rem 2rem;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    margin-top: 3.5rem;
+    grid-template-columns: 25% 75%;
+  }
+  .content {
+    padding: 4rem 2rem;
+  }
+  .title {
+    margin: 0 0 4rem 0;
+    font-size: 2.6rem;
+  }
+  .titleWrapper::before {
+    top: -4rem;
+    left: 1rem;
+    height: 12rem;
+    width: 6rem;
+    opacity: 0.2;
+  }
+  .form {
+    margin-bottom: 0rem;
+  }
+  .label {
+    margin: 1.5rem 0 0.4rem 0;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+  .text,
+  .textarea {
+    padding: 0.7rem;
+    font-size: 1rem;
+  }
+  .letsConnect {
+    margin: 6rem 0;
+  }
+  .letsConnect h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  .letsConnect p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+@media (max-width: 680px) {
+  .container {
+    margin-top: 2.8rem;
+    grid-template-columns: 100%;
+  }
+  .content {
+    padding: 3rem 1.5rem;
+  }
+  .title {
+    margin: 0 0 1rem 0;
+    font-size: 2.2rem;
+  }
+  .titleWrapper::before {
+    top: -4rem;
+    left: 1rem;
+    height: 10rem;
+    width: 5rem;
+    opacity: 0.2;
+  }
+  .imageContainer {
+    display: none;
+  }
+  .imgMobile {
+    display: block;
+    margin: 0rem -1.5rem 2rem;
+  }
+  .form {
+    padding: 0;
+    margin-bottom: 6rem;
+  }
+  .text {
+    max-width: 460px;
+  }
+  .checkboxLabel,
+  .checkboxLabelError {
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+  }
+  .submitBtn,
+  .loaderBtn {
+    padding: 0.6rem 1.6rem;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  .letsConnect {
+    margin: 4rem 0 3rem;
+  }
+  .letsConnect h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  .letsConnect p {
+    font-size: 0.95rem;
+    margin-bottom: 1.3rem;
+  }
+}
+@media (max-width: 420px) {
+  .title {
+    font-size: 2rem;
+  }
+  .titleWrapper::before {
+    top: -3rem;
+    left: 1rem;
+    height: 8rem;
+    width: 4rem;
+  }
+  .label {
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+  }
+  .content {
+    padding: 3rem 1rem;
+  }
+  .submitBtn,
+  .loaderBtn {
+    padding: 0.6rem 1.4rem;
+    font-size: 0.9rem;
+  }
+  .letsConnect h2 {
+    font-size: 1.6rem;
+  }
 }

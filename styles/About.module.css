@@ -130,6 +130,7 @@
   .content p {
     font-size: 1rem;
     margin-bottom: 4rem;
+    line-height: 1.7;
   }
 }
 @media (max-width: 680px) {
