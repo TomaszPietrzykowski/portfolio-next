@@ -4,13 +4,11 @@ import styles from '../styles/Featured.module.css'
 
 const Featured2 = () => {
   return (
-    <section className={styles.featured}>
+    <section className={styles.featured2}>
       <div className={styles.featuredRight}>
-        <Image
-          src='/cm-project.png'
+        <img
+          src='/mobula-hero.png'
           alt='project preview'
-          width={960}
-          height={540}
           className={styles.image}
         />
       </div>
@@ -21,11 +19,9 @@ const Featured2 = () => {
           <h3 className={styles.featuredWww}>www.mobula.dev</h3>
         </a>
         <div className={styles.imgMobile}>
-          <Image
-            src='/cm-project.png'
+          <img
+            src='/mobula-hero.png'
             alt='project preview'
-            width={680}
-            height={382}
             className={styles.image}
           />
         </div>
@@ -33,25 +29,23 @@ const Featured2 = () => {
           Browser based HTTP/API client
         </h4>
         <p className={styles.featuredPara}>
-          <strong>Test your endpoints from the browser</strong>, send json body,
-          set custom headers and query params. Get response timing, size and
-          status. Read body data in custom editor.
+          Test your endpoints from the browser, send json body, set custom
+          headers and query params. Get response timing, size and status. Read
+          body data in custom editor.
         </p>
         <p className={styles.featuredPara}>
-          <strong>Design with ease</strong>. Organize your API's in projects and
-          your requests in collections. Save your work with free account and
-          access from anywhere.
+          Design with ease. Organize your API's in projects and your requests in
+          collections. Save your work with free account and access from
+          anywhere.
         </p>
         <p className={styles.featuredPara}>
-          Use the power of <strong>environmental variables</strong>. Save your
-          tokens and root endpoints, easily switch between development, staging
-          and production.
+          Use the power of environmental variables. Save your tokens and root
+          endpoints, easily switch between development, staging and production.
         </p>
         <p className={styles.featuredPara}>
-          Use <strong>custom proxy</strong> by default to expose headers and
-          validate CORS. Disable proxy with one click and read resources
-          directly from the browser. Postman won't let you do it - just
-          saying...
+          Use custom proxy by default to expose headers and validate CORS.
+          Disable proxy with one click and read resources directly from the
+          browser. Postman won't let you do it - just saying...
         </p>
         <div className={styles.featuredBtnsContainer}>
           <a href='https://mobula.dev' target='_blank'>

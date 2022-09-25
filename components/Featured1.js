@@ -4,7 +4,7 @@ import styles from '../styles/Featured.module.css'
 
 const Featured1 = () => {
   return (
-    <section className={styles.featured}>
+    <section className={styles.featured1}>
       <div className={styles.featuredLeft}>
         <h2 className={styles.featuredSubtitle}>Featured project</h2>
         <h1 className={styles.featuredTitle}>Climate Monitor</h1>
@@ -17,25 +17,22 @@ const Featured1 = () => {
             alt='project preview'
             width={680}
             height={382}
-            className={styles.image}
           />
         </div>
         <h4 className={styles.featuredSubhead}>Free Public API</h4>
         <p className={styles.featuredPara}>
-          <strong>Public RESTful API</strong> serving json data on climate
-          change. Well over 40 endpoints with data on main climate factors. Data
-          from NASA, NOAA and Berkely Institute, stored, updated daily and
-          served on demand without limits.
+          Public RESTful API serving json data on climate change. Well over 40
+          endpoints with data on main climate factors. Data from NASA, NOAA and
+          Berkely Institute, stored, updated daily and served on demand without
+          limits.
         </p>
         <p className={styles.featuredPara}>
-          <strong>Climate data friendly charted</strong> with dynamic range
-          scope for high resolution insight. <br />
+          Climate data friendly charted with dynamic range scope for high
+          resolution insight. <br />
           <br />
-          <strong>Up-to-date newsfeed</strong> providing wider context on
-          climate change. <br />
+          Up-to-date newsfeed providing wider context on climate change. <br />
           <br />
-          <strong>Detailed documentation</strong> of the API with a list of
-          endpoints.
+          Detailed documentation of the API with a list of endpoints.
         </p>
         <div className={styles.featuredBtnsContainer}>
           <a href='https://climatemonitor.info' target='_blank'>
@@ -59,7 +56,6 @@ const Featured1 = () => {
           alt='project preview'
           width={960}
           height={540}
-          className={styles.image}
         />
       </div>
     </section>
