@@ -12,7 +12,7 @@
   margin-top: -2rem;
   background: linear-gradient(217deg, var(--bg-dark03), rgba(0, 0, 0, 1) 100%);
   color: var(--textPrimaryDark);
-  clip-path: polygon(0 27%, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 23%, 100% 0, 100% 100%, 0% 100%);
 }
 .featuredLeft {
   padding: 0 3rem;
@@ -135,8 +135,9 @@
     padding: 5rem 1.5rem 0;
   }
   .featured2 {
-    padding: 15rem 1.5rem 5rem;
-    margin-top: -12rem;
+    padding: 12rem 1.5rem 5rem;
+    margin-top: -4rem;
+    clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%);
   }
   .featuredLeft {
     padding: 0;
@@ -191,12 +192,13 @@
   }
 
   .featured2 {
-    margin-top: -5rem;
-    padding: 10rem 1.5rem 5rem;
-    clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%);
+    margin-top: -3rem;
+    padding: 9rem 1.5rem 5rem;
+    clip-path: polygon(0 6%, 100% 0, 100% 100%, 0% 100%);
   }
   .featured1 {
     margin: 0;
+    padding-top: 3rem;
   }
   .featuredLeft2 {
     padding: 0;
@@ -210,14 +212,12 @@
     width: 0;
   }
   .featuredTitle {
-    font-size: 2.2rem;
-    font-weight: 600;
+    font-size: 1.8rem;
   }
   .featuredSubtitle,
   .featuredSubtitle2 {
-    font-size: 0.9rem;
     font-weight: 800;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     margin-bottom: 1rem;
   }
   .featuredWww {
@@ -242,7 +242,6 @@
   }
   .featuredTitle {
     font-size: 1.8rem;
-    font-weight: 600;
   }
   .featuredSubtitle,
   .featuredSubtitle2 {

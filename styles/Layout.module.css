@@ -103,20 +103,19 @@
 .drawerOpen ul,
 .drawerClosed ul {
   margin-top: 8rem;
-  /* background: greenyellow; */
 }
 .drawerOpen li,
 .drawerClosed li {
   padding: 1rem 1rem 1rem 2rem;
   letter-spacing: 0.5px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 .drawerOpen li:hover {
   color: var(--accent01);
 }
 .closeBtnContainer {
   position: absolute;
-  top: 1.4rem;
+  top: 1.6rem;
   right: 1rem;
 }
 .closeBtn,
@@ -186,10 +185,10 @@
     padding: 0.2rem;
   }
   .logo {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   .navbar {
-    padding: 0.7rem 0.5rem 0.5rem 1rem;
+    padding: 0.9rem 0.5rem 0.5rem 1rem;
   }
 }
 

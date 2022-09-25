@@ -1,7 +1,7 @@
 .container {
   margin-top: 4rem;
   width: 100%;
-  background-color: var(--white);
+  background-color: var(--bg-light01);
   position: relative;
 }
 .container::before {
@@ -65,7 +65,7 @@
   margin-bottom: 6rem;
   background: white;
   border-radius: 20px;
-  box-shadow: 8px 8px 24px var(--shadow00);
+  box-shadow: 4px 4px 24px var(--shadow00);
   display: grid;
   grid-template-columns: 25% 50% 25%;
 }

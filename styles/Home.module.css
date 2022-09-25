@@ -23,14 +23,13 @@
   font-weight: 600;
   line-height: 1.2;
   margin: 0 0 3rem 0;
-  text-shadow: 0px 0px 2px var(--isabelline);
 }
 .subtitle {
   margin-top: 10rem;
   margin-bottom: 2rem;
   text-transform: uppercase;
   font-size: 1.6rem;
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: 4px;
   color: white;
   text-shadow: 0px 0px 2px var(--persianBlue);
@@ -48,7 +47,6 @@
   font-weight: 700;
   letter-spacing: 1px;
   border-radius: 5px;
-  box-shadow: 0px 0px 40px rgba(20, 39, 57, 0.5);
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
@@ -116,22 +114,20 @@
 }
 
 @media (max-width: 680px) {
+  .hero {
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
+  }
   .heroContainer {
     padding: 1.5rem;
   }
   .title {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     letter-spacing: 1px;
   }
   .subtitle {
-    /* margin-top: 6rem; */
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     letter-spacing: 1px;
   }
-  /* .btnContainers {
-    margin-bottom: 4rem;
-  } */
   .ctaSecondary {
     margin-left: 2rem;
   }
@@ -139,16 +135,13 @@
 
 @media (max-width: 400px) {
   .title {
-    font-size: 2.2rem;
     margin-bottom: 2.5rem;
   }
   .subtitle {
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     letter-spacing: 1px;
   }
   .btnContainers {
-    margin-bottom: 6rem;
     flex-direction: column;
   }
   .cta,
