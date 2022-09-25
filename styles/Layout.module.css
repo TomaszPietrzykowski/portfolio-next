@@ -84,15 +84,35 @@
    Drawer
 */
 
-.drawer {
+.drawerOpen,
+.drawerClosed {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   height: 100vh;
-  /* width: 100%; */
-  width: 0%;
-  background: red;
-  overflow: hidden;
+  width: 55%;
+  background: linear-gradient(217deg, rgba(0, 0, 0, 1), var(--bg-dark02) 100%);
+  text-transform: uppercase;
+  font-weight: 500;
+  transform: translateX(0);
+  transition: all 0.4s ease;
+}
+.drawerClosed {
+  transform: translateX(100%);
+}
+.drawerOpen ul,
+.drawerClosed ul {
+  margin-top: 8rem;
+  /* background: greenyellow; */
+}
+.drawerOpen li,
+.drawerClosed li {
+  padding: 1rem 1rem 1rem 2rem;
+  letter-spacing: 0.5px;
+  font-size: 1.1rem;
+}
+.drawerOpen li:hover {
+  color: var(--accent01);
 }
 
 /* 
@@ -220,8 +240,9 @@
     justify-content: flex-start;
   }
   .footerNav li {
-    padding: 0.4rem 0.5rem;
+    padding: 0.5rem;
     border-right: none;
+    font-size: 1rem;
   }
   .footerNav li:nth-of-type(5),
   .footerNav li:nth-of-type(6) {
@@ -236,6 +257,10 @@
   }
   .mobileIcons > * {
     margin-left: 1rem;
+  }
+  .mobileIcons svg {
+    height: 32px;
+    width: 32px;
   }
   .liIcon {
     fill: white;
