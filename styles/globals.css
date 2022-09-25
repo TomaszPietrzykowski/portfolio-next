@@ -7,8 +7,12 @@
   --textPrimary: rgba(5, 9, 14, 0.85);
   --textSecondary: rgba(5, 9, 14, 0.6);
 
-  --bg-dark01: rgb(1, 19, 24);
+  --textPrimaryDark: rgba(255, 255, 255, 0.85);
+  --textSecondaryDark: rgba(215, 222, 230, 0.85);
+
+  --bg-dark01: rgb(2, 27, 34);
   --bg-dark02: rgb(1, 46, 56);
+  --bg-dark03: rgb(1, 40, 50);
 
   --accent01: rgb(0, 220, 250);
   --accent02: rgb(186, 0, 152);
@@ -18,7 +22,7 @@
   --success: rgb(2, 160, 8);
   --error: rgb(220, 0, 0);
 
-  --shadow00: rgba(1, 46, 56, 0.2);
+  --shadow00: rgba(1, 39, 48, 0.2);
   --shadow01: rgba(1, 46, 56, 0.3);
   --shadow02: rgba(1, 46, 56, 0.6);
 }

@@ -114,6 +114,34 @@
 .drawerOpen li:hover {
   color: var(--accent01);
 }
+.closeBtnContainer {
+  position: absolute;
+  top: 1.4rem;
+  right: 1rem;
+}
+.closeBtn,
+.closeBtn::after,
+.closeBtn::before {
+  width: 28px;
+  height: 2.5px;
+  background: none;
+  border-radius: 20rem;
+  position: relative;
+}
+.closeBtn::before {
+  position: absolute;
+  background: var(--accent01);
+  content: '';
+  top: 0;
+  transform: rotate(45deg);
+}
+.closeBtn::after {
+  position: absolute;
+  content: '';
+  background: var(--accent01);
+  top: 0;
+  transform: rotate(-45deg);
+}
 
 /* 
    Responsive
@@ -128,11 +156,10 @@
     font-size: 0.9rem;
   }
   .nav a {
-    padding: 0.5rem;
+    padding: 0.5rem 0.4rem;
   }
   .logo {
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1.4rem;
     padding-left: 0.5rem;
   }
 
@@ -159,17 +186,19 @@
     padding: 0.2rem;
   }
   .logo {
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 1.2rem;
   }
   .navbar {
     padding: 0.7rem 0.5rem 0.5rem 1rem;
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 380px) {
   .navbar {
     padding: 0.7rem 0.5rem 0.5rem 0.5rem;
+  }
+  .logo {
+    font-size: 1.1rem;
   }
 }
 
@@ -209,6 +238,7 @@
 .mobileIcons {
   display: none;
 }
+
 /* 
  *  Responsive footer 
  */
