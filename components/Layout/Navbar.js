@@ -60,28 +60,47 @@ const Navbar = () => {
             </li>
             <li
               className={styles.hamburger}
-              onClick={() => setOpenDrawer(!openDrawer)}
+              onClick={() => setOpenDrawer(true)}
             >
               <div className={styles.hamburgerIcon} />
             </li>
           </ul>
         </nav>
       </div>
-      <div className={styles.drawer}>
-        <ul className={styles.drawerNav}>
-          <li>
+      <div className={openDrawer ? styles.drawerOpen : styles.drawerClosed}>
+        <ul>
+          <li onClick={() => setOpenDrawer(false)}>
             <Link href='/'>Home</Link>
           </li>
-          <li>
+          <li onClick={() => setOpenDrawer(false)}>
             <Link href='/projects'>My Work</Link>
           </li>
-          <li>
+          <li onClick={() => setOpenDrawer(false)}>
             <Link href='/about'>About</Link>
           </li>
-          <li>
+          <li onClick={() => setOpenDrawer(false)}>
             <Link href='/contact'>Contact</Link>
           </li>
+          <li onClick={() => setOpenDrawer(false)}>
+            <a href='https://github.com/TomaszPietrzykowski' target='_blank'>
+              Github
+            </a>
+          </li>
+          <li onClick={() => setOpenDrawer(false)}>
+            <a
+              href='https://www.linkedin.com/in/tomaszpietrzykowski/'
+              target='_blank'
+            >
+              Linkedin
+            </a>
+          </li>
         </ul>
+        <div
+          onClick={() => setOpenDrawer(false)}
+          className={styles.closeBtnContainer}
+        >
+          <div className={styles.closeBtn} />
+        </div>
       </div>
     </header>
   )
