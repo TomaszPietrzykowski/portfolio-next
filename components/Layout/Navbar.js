@@ -9,10 +9,14 @@ const Navbar = () => {
   return (
     <header className={styles.navbar}>
       <div className={styles.flex}>
-        <div className={styles.logo}>
-          <span className={styles.firstname}>Tomasz</span>
-          <span className={styles.lastname}> Pietrzykowski</span>
-        </div>
+        <Link href='/'>
+          <a>
+            <div className={styles.logo}>
+              <span className={styles.firstname}>Tomasz</span>
+              <span className={styles.lastname}> Pietrzykowski</span>
+            </div>
+          </a>
+        </Link>
         <nav>
           <ul className={styles.nav}>
             <li>

@@ -138,15 +138,6 @@ const Contact = () => {
               </button>
             )}
           </form>
-          {/* <div className={styles.imgMobile}>
-            <Image
-              src='/contact.png'
-              alt='developer behind pc -  van goghs starry night style painting'
-              width={680}
-              height={680}
-              className={styles.image}
-            />
-          </div> */}
           <section className={styles.letsConnect}>
             <h2>Let's connect</h2>
             <p>

@@ -1,4 +1,5 @@
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 const Hero = () => {
   return (
@@ -11,8 +12,16 @@ const Hero = () => {
           for the Web
         </h1>
         <div className={styles.btnContainers}>
-          <button className={styles.cta}>My Work</button>
-          <button className={styles.ctaSecondary}>Contact</button>
+          <Link href='/projects'>
+            <a>
+              <button className={styles.cta}>My Work</button>
+            </a>
+          </Link>
+          <Link href='/contact'>
+            <a>
+              <button className={styles.ctaSecondary}>Contact</button>
+            </a>
+          </Link>
         </div>
       </div>
     </main>

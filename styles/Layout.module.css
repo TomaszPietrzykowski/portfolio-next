@@ -271,7 +271,7 @@
   .footerNav li {
     padding: 0.5rem;
     border-right: none;
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .footerNav li:nth-of-type(5),
   .footerNav li:nth-of-type(6) {
