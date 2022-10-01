@@ -15,6 +15,9 @@ const TopHoneys = () => {
                 www.tophoneys.com
               </a>
             </h3>
+            <div className={styles.imgMobile}>
+              <img src='/cm-project.png' className={styles.image} />
+            </div>
             <h4 className={styles.detailsSubhead}>Description</h4>
             <p className={styles.detailsPara2}>
               MERN stack e-commerce app running in production since June 2021.
@@ -61,6 +64,9 @@ const TopHoneys = () => {
       <section className={styles.detailsEven}>
         <div className={styles.detailsLeft}>
           <img src='/cm-project.png' className={styles.imageTop} />
+        </div>
+        <div className={styles.imgMobile}>
+          <img src='/cm-project.png' className={styles.image} />
         </div>
         <div className={styles.detailsRight}>
           <div className={styles.detailsContent}>

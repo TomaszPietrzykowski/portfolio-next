@@ -266,7 +266,8 @@
   text-decoration: underline;
 }
 
-.imageTop {
+.imageTop,
+.imageBottom {
   width: 100%;
 }
 .imgMobile {
@@ -347,6 +348,66 @@
   .projectDescription p {
     font-size: 0.9rem;
   }
+  /* Details */
+  .detailsUneven,
+  .detailsEven {
+    grid-template-columns: 100%;
+    padding-top: 0;
+    margin: 6rem 2rem;
+  }
+  .detailsContent {
+    max-width: 100%;
+  }
+  .detailsUneven .detailsLeft:first-child {
+    padding-left: 0;
+    width: 100%;
+    max-width: auto;
+    margin: 0;
+  }
+  .detailsUneven .detailsRight,
+  .detailsEven .detailsLeft {
+    display: none;
+  }
+  .detailsUneven .imgMobile,
+  .detailsEven .imgMobile {
+    display: block;
+    max-width: 100%;
+  }
+  .image {
+    display: block;
+    width: 100%;
+  }
+
+  .detailsTitle {
+    font-size: 2.8rem;
+    line-height: 1;
+  }
+
+  .detailsSubtitle,
+  .detailsSubtitle2,
+  .detailsSubtitle3 {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+  }
+
+  .detailsWww {
+    font-size: 1rem;
+    margin: 0.5rem 0 5rem 0;
+  }
+
+  .detailsSubhead {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  .detailsPara,
+  .detailsPara2,
+  .detailsPara3 {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    letter-spacing: unset;
+  }
 }
 
 /* ---------------------------------------------- 680 */
@@ -406,12 +467,44 @@
     display: block;
     margin-bottom: 2rem;
   }
+  /* Details */
+  .detailsUneven,
+  .detailsEven {
+    margin: 5rem 1.5rem;
+  }
+
+  .detailsTitle {
+    font-size: 2.5rem;
+  }
+  .detailsSubtitle,
+  .detailsSubtitle2,
+  .detailsSubtitle3 {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
 }
 
-/* ---------------------------------------------- 420 */
+/* ---------------------------------------------- 380 */
 
 @media (max-width: 380px) {
   .projectDescription {
     padding: 2rem 1rem 1.5rem;
+  }
+  .detailsUneven,
+  .detailsEven {
+    grid-template-columns: 100%;
+    margin: 1rem;
+  }
+
+  .detailsTitle {
+    font-size: 2rem;
+  }
+  .detailsSubtitle,
+  .detailsSubtitle2,
+  .detailsSubtitle3 {
+    font-size: 0.85rem;
+  }
+  .detailsWww {
+    font-size: 0.85rem;
   }
 }

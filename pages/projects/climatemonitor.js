@@ -15,6 +15,9 @@ const ClimateMonitor = () => {
                 www.climatemonitor.info
               </a>
             </h3>
+            <div className={styles.imgMobile}>
+              <img src='/cm-project.png' className={styles.image} />
+            </div>
             <h4 className={styles.detailsSubhead}>Description</h4>
             <p className={styles.detailsPara}>
               Free public API serving json data on climate change. Well over 40
@@ -61,7 +64,10 @@ const ClimateMonitor = () => {
       </section>
       <section className={styles.detailsEven}>
         <div className={styles.detailsLeft}>
-          <img src='/cm-project.png' className={styles.imageTop} />
+          <img src='/cm-project.png' className={styles.imageBottom} />
+        </div>
+        <div className={styles.imgMobile}>
+          <img src='/cm-project.png' className={styles.image} />
         </div>
         <div className={styles.detailsRight}>
           <div className={styles.detailsContent}>
