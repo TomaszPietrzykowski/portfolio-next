@@ -35,15 +35,10 @@ const ProjectsPage = () => {
                   />
                 </div>
                 <p>
-                  Fully custom MERN stack e-commerce with rich admin
-                  functionalities. One of main goals was the ease of switching
-                  between payment gates, therefore app is running own backend
-                  and stores all user, product and transaction data in custom db
-                  rather than rely on payment gates providers. <br />
-                  <br />
-                  Currently using Mollie payments, fully responsive, SEO
-                  optimized and PWA ready, secure and modern e-commerce app,
-                  smoothly running in production since june 2021.
+                  MERN stack e-commerce with rich admin functionalities.
+                  Currently using Mollie payments, fully responsive, secure and
+                  modern e-commerce app, smoothly running in production since
+                  june 2021.
                 </p>
                 <div className={styles.projectLiBtnsContainer}>
                   <Link href='/projects/tophoneys'>
@@ -86,13 +81,8 @@ const ProjectsPage = () => {
                 <p>
                   Free public REST API, comprehensive and easy to use. Serving
                   json data on earth CO<sub>2</sub> and other climate factors.
-                  Frontend presents data in elegant charts with dynamic scope,
-                  provides climate-oriented newsfeed and detailed documentation.
-                  <br />
-                  <br />
-                  App built around complex scheduler running updates over
-                  multiple sources. Data is parsed and unified, than served as
-                  json from database without limits.
+                  Frontend presents charted data, climate-oriented newsfeed and
+                  detailed documentation.
                 </p>
                 <div className={styles.projectLiBtnsContainer}>
                   <Link href='/projects/climatemonitor'>
@@ -136,15 +126,9 @@ const ProjectsPage = () => {
                 </div>
                 <p>
                   Browser-based HTTP/API client, inspierd by software like
-                  Postman and Insomnia. Simple and light-weight, built for quick
-                  and effortless testing of endpoints.
-                  <br />
-                  <br />
-                  App is running custom proxy for CORS validation, uses JSON
-                  editor for body data and gives you control over headers and
-                  query params. Let's you organize your work in projects and
-                  folders and save it with free account. Environmental variables
-                  make work even easer.
+                  Postman and Insomnia. Simple and light-weight, built for rapid
+                  testing of endpoints. Comes with a free user account, CORS
+                  proxy and environmental variables.
                 </p>
                 <div className={styles.projectLiBtnsContainer}>
                   <Link href='/projects/mobula'>
