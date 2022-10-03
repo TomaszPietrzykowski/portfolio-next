@@ -21,7 +21,7 @@ const Mobula = () => {
             <h4 className={styles.detailsSubhead}>Description</h4>
             <p className={styles.detailsPara3}>
               Browser based HTTP/API client for rapid testing of endpoints.
-              Let's you bypass CORS, send JSON body from the browser and apply
+              Allows you bypass CORS, send JSON body from the browser and apply
               custom headers and params. App returns request time, size and
               status, exposes all headers and displays response body. Gives you
               project-scoped environmental variables for faster workflow.
@@ -74,13 +74,13 @@ const Mobula = () => {
           <div className={styles.detailsContent}>
             <h4 className={styles.detailsSubhead}>Technology</h4>
             <p className={styles.detailsPara3}>
-              Node.js/Express server, proxy dealing with Cross Origin Resourse
+              Node.js/Express server - proxy dealing with Cross Origin Resourse
               Sharing and exposing data to the browser. User data and work
-              stored in MongoDB database. JWT authentication.
+              stored in MongoDB database. Authentication with JWT.
             </p>
             <p className={styles.detailsPara3}>
               Next.js-powered React frontend with Redux state management.
-              Written in TypeScript and styled with custom css modules.
+              Written in TypeScript and styled with css modules.
             </p>
             <h4 className={styles.detailsSubhead}>Story behind</h4>
             <p className={styles.detailsPara3}>

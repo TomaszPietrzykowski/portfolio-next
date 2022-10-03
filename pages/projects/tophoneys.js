@@ -86,12 +86,10 @@ const TopHoneys = () => {
               Designed and built for startup, Top Honeys app was kind of a
               journey for me. I initially based payments on PayPal, but I didn't
               want the app to rely too much on third party. PayPal aggressively
-              promotes it's client-side implementation, which can be secure only
-              if PayPal stores data. Server-side implementation turned out to be
-              flagged and discouraged. I ended up implementing Mollie Payments
-              (best decision ever) and designing architecture where client,
-              product and transaction data is stored within own backend,
-              allowing necessary validation without duplicating data.
+              promotes it's client-side implementation. I ended up implementing
+              Mollie Payments (best decision ever) and designing architecture
+              where client, product and transaction data is stored within own
+              backend, allowing necessary validation without duplicating data.
             </p>
             <p className={styles.detailsPara2}>
               Development highlights would certainly be PayPal developer
