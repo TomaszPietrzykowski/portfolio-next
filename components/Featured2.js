@@ -51,12 +51,12 @@ const Featured2 = () => {
           <a href='https://mobula.dev' target='_blank'>
             <button className={styles.featuredBtn2}>Project Live</button>
           </a>
-          <Link href='/projects/mobula'>
+          <Link href='/projects/mobula/'>
             <a>
               <button className={styles.featuredBtn2}>Read More</button>
             </a>
           </Link>
-          <Link href='/projects'>
+          <Link href='/projects/'>
             <a>
               <button className={styles.featuredBtn2}>All Projects</button>
             </a>

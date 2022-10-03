@@ -1,7 +1,7 @@
 .container {
   margin-top: 4rem;
   width: 100%;
-  background-color: var(--bg-light01);
+  background-color: var(--white);
   position: relative;
 }
 .container::before {
@@ -11,10 +11,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  background-image: url('../public/projects-main.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: linear-gradient(307deg, var(--bg-dark02), rgba(0, 0, 0, 1) 100%);
 }
 .leftBackground {
   width: 100%;

@@ -52,7 +52,7 @@ const ClimateMonitor = () => {
                   </a>
                 </li>
                 <li>
-                  <Link href='/projects'>Back to all projects</Link>
+                  <Link href='/projects/'>Back to all projects</Link>
                 </li>
               </ul>
             </p>

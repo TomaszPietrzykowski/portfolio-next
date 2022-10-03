@@ -38,12 +38,12 @@ const Featured1 = () => {
           <a href='https://climatemonitor.info' target='_blank'>
             <button className={styles.featuredBtn}>Project Live</button>
           </a>
-          <Link href='/projects/climatemonitor'>
+          <Link href='/projects/climatemonitor/'>
             <a>
               <button className={styles.featuredBtn}>Read More</button>
             </a>
           </Link>
-          <Link href='/projects'>
+          <Link href='/projects/'>
             <a>
               <button className={styles.featuredBtn}>All Projects</button>
             </a>

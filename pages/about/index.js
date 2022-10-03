@@ -71,7 +71,7 @@ const About = () => {
             Github
           </a>{' '}
           or{' '}
-          <Link href='/contact'>
+          <Link href='/contact/'>
             <a>send me an email</a>
           </Link>
           .

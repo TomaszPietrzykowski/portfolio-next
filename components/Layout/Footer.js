@@ -9,13 +9,13 @@ const Footer = () => {
           <Link href='/'>Home</Link>
         </li>
         <li>
-          <Link href='/projects'>My Work</Link>
+          <Link href='/projects/'>My Work</Link>
         </li>
         <li>
-          <Link href='/about'>About Me</Link>
+          <Link href='/about/'>About Me</Link>
         </li>
         <li>
-          <Link href='/contact'>Contact</Link>
+          <Link href='/contact/'>Contact</Link>
         </li>
         <li>
           <a href='https://github.com/TomaszPietrzykowski' target='_blank'>

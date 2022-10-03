@@ -12,12 +12,12 @@ const Hero = () => {
           for the Web
         </h1>
         <div className={styles.btnContainers}>
-          <Link href='/projects'>
+          <Link href='/projects/'>
             <a>
               <button className={styles.cta}>My Work</button>
             </a>
           </Link>
-          <Link href='/contact'>
+          <Link href='/contact/'>
             <a>
               <button className={styles.ctaSecondary}>Contact</button>
             </a>

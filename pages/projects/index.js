@@ -41,7 +41,7 @@ const ProjectsPage = () => {
                   june 2021.
                 </p>
                 <div className={styles.projectLiBtnsContainer}>
-                  <Link href='/projects/tophoneys'>
+                  <Link href='/projects/tophoneys/'>
                     <a>
                       <button className={styles.projectLiBtn}>Read More</button>
                     </a>
@@ -85,7 +85,7 @@ const ProjectsPage = () => {
                   detailed documentation.
                 </p>
                 <div className={styles.projectLiBtnsContainer}>
-                  <Link href='/projects/climatemonitor'>
+                  <Link href='/projects/climatemonitor/'>
                     <a>
                       <button className={styles.projectLiBtn2}>
                         Read More
@@ -131,7 +131,7 @@ const ProjectsPage = () => {
                   proxy and environmental variables.
                 </p>
                 <div className={styles.projectLiBtnsContainer}>
-                  <Link href='/projects/mobula'>
+                  <Link href='/projects/mobula/'>
                     <a>
                       <button className={styles.projectLiBtn3}>
                         Read More

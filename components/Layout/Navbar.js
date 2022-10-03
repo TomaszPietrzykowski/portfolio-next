@@ -23,13 +23,13 @@ const Navbar = () => {
               <Link href='/'>Home</Link>
             </li>
             <li>
-              <Link href='/projects'>My Work</Link>
+              <Link href='/projects/'>My Work</Link>
             </li>
             <li>
-              <Link href='/about'>About Me</Link>
+              <Link href='/about/'>About Me</Link>
             </li>
             <li>
-              <Link href='/contact'>Contact</Link>
+              <Link href='/contact/'>Contact</Link>
             </li>
             <li>
               <a href='https://github.com/TomaszPietrzykowski' target='_blank'>
@@ -77,13 +77,13 @@ const Navbar = () => {
             <Link href='/'>Home</Link>
           </li>
           <li onClick={() => setOpenDrawer(false)}>
-            <Link href='/projects'>My Work</Link>
+            <Link href='/projects/'>My Work</Link>
           </li>
           <li onClick={() => setOpenDrawer(false)}>
-            <Link href='/about'>About</Link>
+            <Link href='/about/'>About</Link>
           </li>
           <li onClick={() => setOpenDrawer(false)}>
-            <Link href='/contact'>Contact</Link>
+            <Link href='/contact/'>Contact</Link>
           </li>
           <li onClick={() => setOpenDrawer(false)}>
             <a href='https://github.com/TomaszPietrzykowski' target='_blank'>
