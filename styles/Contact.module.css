@@ -334,6 +334,7 @@
     font-weight: 600;
   }
   .letsConnect p {
+    font-size: 1rem;
     margin-bottom: 1.3rem;
   }
 }
@@ -358,5 +359,11 @@
   }
   .letsConnect h2 {
     font-size: 1.6rem;
+  }
+  .letsConnect p {
+    font-size: 0.95rem;
+  }
+  .letsConnect a span {
+    margin-left: 0.5rem;
   }
 }

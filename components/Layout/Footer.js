@@ -18,12 +18,17 @@ const Footer = () => {
           <Link href='/contact'>Contact</Link>
         </li>
         <li>
-          <Link href='https://github.com/TomaszPietrzykowski'>Github</Link>
+          <a href='https://github.com/TomaszPietrzykowski' target='_blank'>
+            Github
+          </a>
         </li>
         <li>
-          <Link href='https://www.linkedin.com/in/tomaszpietrzykowski/'>
+          <a
+            href='https://www.linkedin.com/in/tomaszpietrzykowski/'
+            target='_blank'
+          >
             LinkedIn
-          </Link>
+          </a>
         </li>
       </ul>
       <ul className={styles.mobileIcons}>
