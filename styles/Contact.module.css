@@ -69,6 +69,8 @@
   color: var(--accent01);
 }
 .text,
+.textEmail,
+.textEmailError,
 .textarea {
   padding: 0.8rem;
   border: none;
@@ -78,8 +80,14 @@
   color: var(--bg-dark02);
   font-family: inherit;
 }
+.textEmail,
+.textEmailError,
 .text {
   max-width: 360px;
+}
+.textEmailError {
+  outline: 2px solid var(--error);
+  color: var(--error);
 }
 /* checbox sandbox */
 .checkboxContainer,
@@ -167,7 +175,8 @@
 
 /* Success Popup */
 
-.success {
+.success,
+.error {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -178,18 +187,26 @@
   justify-content: center;
   align-items: center;
 }
-.success p {
-  background: var(--success);
-  color: white;
-  padding: 2rem 5rem 2rem 4rem;
+.success p,
+.error p {
+  padding: 1.5rem 3.5rem 1.5rem 2.5rem;
   letter-spacing: 1px;
-  font-weight: 500;
-  border: 1px solid var(--success);
+  font-weight: 600;
   border-radius: 4px;
   box-shadow: 4px 4px 24px var(--shadow02);
   position: relative;
+
+  background: var(--success);
+  color: white;
+  border: 1px solid var(--success);
 }
-.success p::after {
+.error p {
+  background: var(--error);
+  color: white;
+  border: 1px solid var(--error);
+}
+.success p::after,
+.error p::after {
   position: absolute;
   top: 4px;
   right: 7px;
@@ -198,6 +215,11 @@
   color: white;
   cursor: pointer;
 }
+
+/* Error Popup */
+
+/* Loader */
+
 .loaderBtn {
   background: var(--bg-dark01);
   border-color: var(--bg-dark01);
@@ -210,9 +232,6 @@
 .loader {
   height: 2.7rem;
 }
-/* .imgMobile {
-  display: none;
-} */
 
 /* 
  *   Responsive -------------------------------------
@@ -249,11 +268,15 @@
     font-size: 0.9rem;
     letter-spacing: 1px;
   }
+  .textEmail,
+  .textEmailError,
   .text,
   .textarea {
     padding: 0.7rem;
     font-size: 1rem;
   }
+  .textEmail,
+  .textEmailError,
   .text {
     max-width: 340px;
   }
@@ -288,6 +311,8 @@
     height: 10rem;
     width: 5rem;
   }
+  .textEmail,
+  .textEmailError,
   .text {
     max-width: 300px;
   }

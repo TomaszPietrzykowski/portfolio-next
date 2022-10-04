@@ -7,14 +7,24 @@ const Contact = () => {
   // legal consent state
   const [legalConsent, setLegalConsent] = useState(false)
   const [consentError, setConsentError] = useState(false)
+  const [error, setError] = useState(null)
+  const [emailError, setEmailError] = useState(null)
   // form control
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
   // submit state
   const [loading, setLoading] = useState(false)
-  const [success, setSuccess] = useState(false)
+  const [success, setSuccess] = useState(true)
 
+  // email validation
+  const validateEmail = (email) => {
+    return String(email)
+      .toLowerCase()
+      .match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      )
+  }
   // email controller
   const sendEmail = async (name, email, message) => {
     try {
@@ -41,20 +51,27 @@ const Contact = () => {
         setTimeout(() => setSuccess(false), 2000)
       }
     } catch (error) {
-      // TODO - error handling
       console.log(error)
-      // for testing, remove
-      setTimeout(() => setLoading(false), 3000)
+      const errMsg =
+        error.response && error.response.data.message
+          ? error.response.data.message
+          : error.message
+      setError(errMsg)
+      setLoading(false)
     }
   }
 
   // form handler
   const handleSubmit = (e) => {
     e.preventDefault()
-    if (legalConsent) {
-      sendEmail(name, email, message)
+    if (validateEmail(email)) {
+      if (legalConsent) {
+        sendEmail(name, email, message)
+      } else {
+        setConsentError(true)
+      }
     } else {
-      setConsentError(true)
+      setEmailError(true)
     }
   }
 
@@ -87,7 +104,7 @@ const Contact = () => {
               required
               id='email'
               value={email}
-              className={styles.text}
+              className={emailError ? styles.textEmailError : styles.textEmail}
               onChange={(e) => setEmail(e.target.value)}
             />
             <label htmlFor='message' className={styles.label}>
@@ -194,6 +211,20 @@ const Contact = () => {
           </section>
         </div>
       </div>
+      {error && (
+        <div className={styles.error} onClick={() => setError(null)}>
+          <p>
+            Message not sent :( <br />
+            <br />
+            {error}
+          </p>
+        </div>
+      )}
+      {emailError && (
+        <div className={styles.error} onClick={() => setEmailError(false)}>
+          <p>Insert valid email</p>
+        </div>
+      )}
       {success && (
         <div className={styles.success} onClick={() => setSuccess(false)}>
           <p>Message sent, thank you!</p>
