@@ -15,7 +15,7 @@ const Contact = () => {
   const [message, setMessage] = useState('')
   // submit state
   const [loading, setLoading] = useState(false)
-  const [success, setSuccess] = useState(true)
+  const [success, setSuccess] = useState(false)
 
   // email validation
   const validateEmail = (email) => {
