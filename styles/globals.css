@@ -10,9 +10,9 @@
   --textPrimaryDark: rgba(255, 255, 255, 0.85);
   --textSecondaryDark: rgba(215, 222, 230, 0.85);
 
-  --bg-dark01: rgb(2, 27, 34);
-  --bg-dark02: rgb(1, 46, 56);
-  --bg-dark03: rgb(1, 40, 50);
+  --bg-dark01: hsl(193, 89%, 7%);
+  --bg-dark02: hsl(191, 96%, 11%);
+  --bg-dark03: hsl(192, 96%, 10%);
 
   --bg-light01: rgb(241, 245, 246);
 
@@ -22,11 +22,12 @@
   --accent04: rgb(236, 146, 0);
 
   --success: rgb(19, 149, 24);
-  --error: rgb(145, 17, 23);
+  --error: rgb(189, 3, 13);
 
   --shadow00: rgba(1, 39, 48, 0.2);
   --shadow01: rgba(1, 46, 56, 0.3);
   --shadow02: rgba(1, 46, 56, 0.6);
+  --shadow03: hsla(192, 96%, 30%, 20%);
 }
 
 * {

@@ -7,7 +7,7 @@ const Featured2 = () => {
     <section className={styles.featured2}>
       <div className={styles.featuredRight}>
         <img
-          src='/mobula-hero.png'
+          src='/featured-mobula.png'
           alt='project preview'
           className={styles.image}
         />
@@ -20,7 +20,7 @@ const Featured2 = () => {
         </a>
         <div className={styles.imgMobile}>
           <img
-            src='/mobula-hero.png'
+            src='/featured-mobula.png'
             alt='project preview'
             className={styles.image}
           />
