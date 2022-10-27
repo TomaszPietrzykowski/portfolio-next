@@ -52,7 +52,7 @@
 .projectsList li {
   margin-bottom: 12rem;
   background: white;
-  border-radius: 20px;
+  border-radius: 35px;
   box-shadow: 4px 4px 24px var(--shadow00);
   display: grid;
   grid-template-columns: 50% 50%;
@@ -67,18 +67,17 @@
 .projectRight {
   height: 100%;
   background: linear-gradient(20deg, hsl(37, 100%, 30%), hsl(37, 100%, 60%));
-  border-radius: 0 20px 20px 0;
+  border-radius: 0 35px 35px 0;
   overflow: hidden;
-  position: relative;
+  display: flex;
+  align-items: flex-end;
 }
 .projectRight img {
   display: block;
-  opacity: 0.85;
+  opacity: 0.9;
   margin-top: 2rem;
   margin-left: -2rem;
   filter: drop-shadow(8px 0px 25px hsla(37, 100%, 29%, 0.8));
-  position: relative;
-  bottom: 0;
 }
 .projectRight2 {
   background: linear-gradient(45deg, hsl(207, 33%, 25%), hsl(207, 44%, 49%));
@@ -89,8 +88,6 @@
   margin-top: 2rem;
   margin-left: -2rem;
   filter: drop-shadow(8px 0px 25px hsla(207, 44%, 20%, 0.8));
-  position: relative;
-  bottom: 0;
 }
 .projectRight3 {
   background: linear-gradient(45deg, hsl(317, 100%, 10%), hsl(317, 96%, 28%));
@@ -100,8 +97,6 @@
   opacity: 0.9;
   margin-top: 2rem;
   filter: drop-shadow(8px 0px 25px hsla(317, 97%, 11%, 80%));
-  position: relative;
-  bottom: 0;
 }
 .projectTitle {
   font-size: 2.2rem;
@@ -296,6 +291,9 @@
 /* ---------------------------------------------- 900 */
 
 @media (max-width: 1200px) {
+  .projectsList li {
+    grid-template-columns: 60% 40%;
+  }
   .projectLiBtnsContainer {
     flex-direction: column;
     justify-content: flex-start;
@@ -331,14 +329,9 @@
     font-size: 2.6rem;
   }
   .projectsList li {
-    /* outline: 1px solid orange; */
     margin-bottom: 3rem;
     border-radius: 20px;
     grid-template-columns: 60% 40%;
-  }
-  .projectRight {
-    background-position: top;
-    margin-top: 2.5rem;
   }
   .projectTitle {
     font-size: 2rem;
