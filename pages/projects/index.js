@@ -44,7 +44,13 @@ const ProjectsPage = () => {
                   </a>
                 </div>
               </div>
-              <div className={styles.projectRight}></div>
+              <div className={styles.projectRight}>
+                <img
+                  src='/th-isometric.png'
+                  alt='project preview top honeys e-commerce'
+                  className={styles.imageRight}
+                />
+              </div>
             </li>
             <li>
               <div className={styles.projectDescription}>
@@ -81,7 +87,13 @@ const ProjectsPage = () => {
                   </a>
                 </div>
               </div>
-              <div className={styles.projectRight2}></div>
+              <div className={styles.projectRight2}>
+                <img
+                  src='/cm-isometric.png'
+                  alt='project preview climate monitor free public json API'
+                  className={styles.imageRight}
+                />
+              </div>
             </li>
             <li>
               <div className={styles.projectDescription}>

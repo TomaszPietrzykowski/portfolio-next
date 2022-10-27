@@ -50,7 +50,7 @@
   padding: 0;
 }
 .projectsList li {
-  margin-bottom: 8rem;
+  margin-bottom: 12rem;
   background: white;
   border-radius: 20px;
   box-shadow: 4px 4px 24px var(--shadow00);
@@ -59,23 +59,41 @@
 }
 /* left card column */
 .projectDescription {
-  padding: 2rem 3rem;
+  padding: 2rem 2rem 2rem 3.5rem;
 }
 /* right card column */
 .projectRight3,
 .projectRight2,
 .projectRight {
   height: 100%;
-  background: linear-gradient(20deg, hsl(37, 100%, 40%), hsl(37, 100%, 60%));
+  background: linear-gradient(20deg, hsl(37, 100%, 30%), hsl(37, 100%, 60%));
   border-radius: 0 20px 20px 0;
   overflow: hidden;
+  position: relative;
+}
+.projectRight img {
+  display: block;
+  opacity: 0.85;
+  margin-top: 2rem;
+  margin-left: -2rem;
+  filter: drop-shadow(8px 0px 25px hsla(37, 100%, 29%, 0.8));
+  position: relative;
+  bottom: 0;
 }
 .projectRight2 {
-  background: linear-gradient(45deg, rgb(46, 71, 92), steelblue);
+  background: linear-gradient(45deg, hsl(207, 33%, 25%), hsl(207, 44%, 49%));
+}
+.projectRight2 img {
+  display: block;
+  opacity: 0.85;
+  margin-top: 2rem;
+  margin-left: -2rem;
+  filter: drop-shadow(8px 0px 25px hsla(207, 44%, 20%, 0.8));
+  position: relative;
+  bottom: 0;
 }
 .projectRight3 {
   background: linear-gradient(45deg, hsl(317, 100%, 10%), hsl(317, 96%, 28%));
-  position: relative;
 }
 .projectRight3 img {
   display: block;
