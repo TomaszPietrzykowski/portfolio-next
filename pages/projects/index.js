@@ -12,15 +12,6 @@ const ProjectsPage = () => {
           </div>
           <ul className={styles.projectsList}>
             <li>
-              <div className={styles.projectLeft}>
-                <Image
-                  src='/tophoneys-logo.png'
-                  alt='project preview'
-                  width={400}
-                  height={217}
-                  className={styles.logo}
-                />
-              </div>
               <div className={styles.projectDescription}>
                 <h4 className={styles.projectSubtitle}>custom e-commerce</h4>
                 <h2 className={styles.projectTitle}>Top Honeys</h2>
@@ -56,15 +47,6 @@ const ProjectsPage = () => {
               <div className={styles.projectRight}></div>
             </li>
             <li>
-              <div className={styles.projectLeft}>
-                <Image
-                  src='/cm-logo.png'
-                  alt='project preview'
-                  width={400}
-                  height={177}
-                  className={styles.logo}
-                />
-              </div>
               <div className={styles.projectDescription}>
                 <h4 className={styles.projectSubtitle2}>Public API</h4>
                 <h2 className={styles.projectTitle}>Climate Monitor</h2>
@@ -99,18 +81,9 @@ const ProjectsPage = () => {
                   </a>
                 </div>
               </div>
-              <div className={styles.projectRight}></div>
+              <div className={styles.projectRight2}></div>
             </li>
             <li>
-              <div className={styles.projectLeft}>
-                <Image
-                  src='/cm-logo.png'
-                  alt='project preview'
-                  width={400}
-                  height={177}
-                  className={styles.logo}
-                />
-              </div>
               <div className={styles.projectDescription}>
                 <h4 className={styles.projectSubtitle3}>HTTP/API client</h4>
                 <h2 className={styles.projectTitle}>Mobula API</h2>
@@ -145,7 +118,13 @@ const ProjectsPage = () => {
                   </a>
                 </div>
               </div>
-              <div className={styles.projectRight}></div>
+              <div className={styles.projectRight3}>
+                <img
+                  src='/mobula-isometric.png'
+                  alt='project preview mobula http client'
+                  className={styles.imageRight}
+                />
+              </div>
             </li>
           </ul>
         </div>
