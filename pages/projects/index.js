@@ -16,15 +16,6 @@ const ProjectsPage = () => {
                 <h4 className={styles.projectSubtitle}>custom e-commerce</h4>
                 <h2 className={styles.projectTitle}>Top Honeys</h2>
                 <div className={styles.projectWww}>www.tophoneys.com</div>
-                <div className={styles.imgMobile}>
-                  <Image
-                    src='/cm-project.png'
-                    alt='project preview'
-                    width={680}
-                    height={382}
-                    className={styles.image}
-                  />
-                </div>
                 <p>
                   MERN stack e-commerce with rich admin functionalities.
                   Currently using Mollie payments, fully responsive, secure and
@@ -57,15 +48,6 @@ const ProjectsPage = () => {
                 <h4 className={styles.projectSubtitle2}>Public API</h4>
                 <h2 className={styles.projectTitle}>Climate Monitor</h2>
                 <div className={styles.projectWww}>www.climatemonitor.info</div>
-                <div className={styles.imgMobile}>
-                  <Image
-                    src='/cm-project.png'
-                    alt='project preview'
-                    width={680}
-                    height={382}
-                    className={styles.image}
-                  />
-                </div>
                 <p>
                   Free public REST API, comprehensive and easy to use. Serving
                   json data on earth CO<sub>2</sub> and other climate factors.
@@ -100,15 +82,6 @@ const ProjectsPage = () => {
                 <h4 className={styles.projectSubtitle3}>HTTP/API client</h4>
                 <h2 className={styles.projectTitle}>Mobula API</h2>
                 <div className={styles.projectWww}>www.mobula.dev</div>
-                <div className={styles.imgMobile}>
-                  <Image
-                    src='/cm-project.png'
-                    alt='project preview'
-                    width={680}
-                    height={382}
-                    className={styles.image}
-                  />
-                </div>
                 <p>
                   Browser-based HTTP/API client, inspierd by software like
                   Postman and Insomnia. Simple and light-weight, built for rapid
