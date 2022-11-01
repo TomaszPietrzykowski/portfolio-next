@@ -287,11 +287,10 @@
   filter: drop-shadow(8px 8px 10px var(--shadow01));
 }
 .imageTop {
-  padding: 0 0 0 4rem;
-  margin-right: -12rem;
+  padding: 0 2rem 0 4rem;
 }
 .imageBottom {
-  padding: 3rem 6rem 0 0;
+  padding: 3rem 6rem 0 2rem;
 }
 .imgMobile {
   display: none;
@@ -300,7 +299,24 @@
  *  Responsive
  */
 
-/* ---------------------------------------------- 900 */
+/* ---------------------------------------------- 1400 */
+
+@media (max-width: 1400px) {
+  .imageTop,
+  .imageBottom {
+    width: auto;
+    overflow: hidden;
+  }
+  .detailsLeft {
+    position: relative;
+  }
+  .imageBottom {
+    position: absolute;
+    right: 0;
+  }
+}
+
+/* ---------------------------------------------- 1200 */
 
 @media (max-width: 1200px) {
   .projectsList li {
@@ -322,6 +338,9 @@
     letter-spacing: 1px;
   }
 }
+
+/* ---------------------------------------------- 900 */
+
 @media (max-width: 900px) {
   .container {
     margin-top: 3.5rem;
