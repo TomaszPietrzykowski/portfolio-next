@@ -16,7 +16,7 @@ const ClimateMonitor = () => {
               </a>
             </h3>
             <div className={styles.imgMobile}>
-              <img src='/cm-project.png' className={styles.image} />
+              <img src='/cm-desk-01.png' className={styles.image} />
             </div>
             <h4 className={styles.detailsSubhead}>Description</h4>
             <p className={styles.detailsPara}>
@@ -59,15 +59,15 @@ const ClimateMonitor = () => {
           </div>
         </div>
         <div className={styles.detailsRight}>
-          <img src='/cm-project.png' className={styles.imageTop} />
+          <img src='/cm-desk-01.png' className={styles.imageTop} />
         </div>
       </section>
       <section className={styles.detailsEven}>
         <div className={styles.detailsLeft}>
-          <img src='/cm-project.png' className={styles.imageBottom} />
+          <img src='/cm-desk-02.png' className={styles.imageBottom} />
         </div>
         <div className={styles.imgMobile}>
-          <img src='/cm-project.png' className={styles.image} />
+          <img src='/cm-desk-02.png' className={styles.image} />
         </div>
         <div className={styles.detailsRight}>
           <div className={styles.detailsContent}>

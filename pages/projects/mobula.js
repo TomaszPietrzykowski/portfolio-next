@@ -65,10 +65,10 @@ const Mobula = () => {
       </section>
       <section className={styles.detailsEven}>
         <div className={styles.detailsLeft}>
-          <img src='/mobula-desk-04.png' className={styles.imageBottom} />
+          <img src='/mobula-desk-02.png' className={styles.imageBottom} />
         </div>
         <div className={styles.imgMobile}>
-          <img src='/mobula-desk-04.png' className={styles.image} />
+          <img src='/mobula-desk-02.png' className={styles.image} />
         </div>
         <div className={styles.detailsRight}>
           <div className={styles.detailsContent}>
