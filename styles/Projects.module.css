@@ -489,7 +489,7 @@
     display: none;
   }
   .projectDescription {
-    padding: 2rem 1.5rem 2.5rem;
+    padding: 2.5rem 1.5rem 1rem;
   }
   .projectTitle {
     font-size: 1.8rem;
@@ -508,7 +508,7 @@
   }
   .projectsList li {
     box-shadow: 4px 4px 18px var(--shadow00);
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     border-radius: 20px;
     grid-template-columns: 100%;
     box-shadow: 0px 5px 20px 0px var(--shadow00);
@@ -521,7 +521,6 @@
   .projectRight img,
   .projectRight2 img,
   .projectRight3 img {
-    /* height: auto; */
     max-width: 100%;
     margin-left: 0;
   }
@@ -529,7 +528,9 @@
   .projectRight2,
   .projectRight {
     background-position: top;
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 20px 20px 0px 0px;
+    grid-column-start: 1;
+    grid-row-start: 1;
   }
   /* Details */
   .detailsUneven,
@@ -555,7 +556,7 @@
 
 @media (max-width: 380px) {
   .projectDescription {
-    padding: 2rem 1.2rem 1.5rem;
+    padding: 2rem 1.2rem;
   }
   .detailsUneven,
   .detailsEven {
