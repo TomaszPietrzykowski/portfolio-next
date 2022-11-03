@@ -33,7 +33,7 @@ const About = () => {
         </p>
         <div className={styles.imgMobile}>
           <Image
-            src='/about-me.png'
+            src='/about-me.jpeg'
             alt='developer behind pc -  van goghs starry night style painting'
             width={680}
             height={680}

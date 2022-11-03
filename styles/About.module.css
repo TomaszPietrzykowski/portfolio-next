@@ -6,7 +6,7 @@
 }
 .imageContainer {
   height: 100%;
-  background-image: url('../public/about-me.png');
+  background-image: url('../public/about-me.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

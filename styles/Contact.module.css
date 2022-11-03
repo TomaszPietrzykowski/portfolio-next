@@ -6,7 +6,7 @@
 }
 .imageContainer {
   height: 100%;
-  background-image: url('../public/contact.png');
+  background-image: url('../public/contact.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -330,7 +330,7 @@
     bottom: -2rem;
     left: -2rem;
     right: -2rem;
-    background: url('/contact.png');
+    background: url('/contact.jpeg');
     background-position: center;
     background-size: cover;
     z-index: -1;

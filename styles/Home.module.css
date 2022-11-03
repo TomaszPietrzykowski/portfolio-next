@@ -1,7 +1,7 @@
 .hero {
   width: 100%;
   background: var(--bg-dark01);
-  background-image: url(/hero.png);
+  background-image: url('/hero.jpeg');
   background-position: top;
   background-size: cover;
   color: #ffffff;
