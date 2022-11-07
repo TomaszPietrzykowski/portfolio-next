@@ -96,10 +96,11 @@ const ProjectsPage = () => {
                       </button>
                     </a>
                   </Link>
-                  <a href='https://mobula.dev' target='_blank'>
-                    <button className={styles.projectLiBtn3}>
-                      Project live
-                    </button>
+                  <a
+                    href='https://github.com/TomaszPietrzykowski/mobula-api'
+                    target='_blank'
+                  >
+                    <button className={styles.projectLiBtn3}>Repository</button>
                   </a>
                 </div>
               </div>

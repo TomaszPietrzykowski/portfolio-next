@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import styles from '../styles/Featured.module.css'
 
 const Featured2 = () => {
@@ -47,10 +46,10 @@ const Featured2 = () => {
           Disable proxy with one click and read resources directly from the
           browser. Postman won't let you do it - just saying...
         </p>
-        <div className={styles.featuredBtnsContainer}>
-          <a href='https://mobula.dev' target='_blank'>
+        <div className={styles.featuredBtnsContainer2}>
+          {/* <a href='https://mobula.dev' target='_blank'>
             <button className={styles.featuredBtn2}>Project Live</button>
-          </a>
+          </a> */}
           <Link href='/projects/mobula/'>
             <a>
               <button className={styles.featuredBtn2}>Read More</button>

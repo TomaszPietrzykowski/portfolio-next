@@ -81,6 +81,20 @@
   justify-content: space-between;
   margin: 4rem 0 0;
 }
+/* -------------------------- TEMP - remove after mobula deplyment */
+.featuredBtnsContainer2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 4rem 0 0;
+}
+
+.featuredBtn2 {
+  margin-right: 3rem;
+}
+
+/* --------------------------------------------------------------- */
+
 .featuredBtn,
 .featuredBtn2 {
   padding: 0.8rem 2.2rem;
@@ -167,11 +181,16 @@
   .featuredPara {
     margin-bottom: 1.5rem;
   }
-  .featuredBtnsContainer {
+  .featuredBtnsContainer,
+  .featuredBtnsContainer2 {
     flex-direction: column;
+    justify-content: space-between;
   }
   .featuredBtnsContainer > * {
     margin-bottom: 1rem;
+  }
+  .featuredBtnsContainer2 > * {
+    margin-bottom: 1.5rem;
   }
   .featuredBtn,
   .featuredBtn2 {
@@ -241,7 +260,7 @@
     padding: 3rem 1rem 2rem;
   }
   .featured2 {
-    padding: 6rem 1rem 0;
+    padding: 6rem 1rem 4rem;
   }
   .featuredTitle {
     font-size: 1.8rem;
@@ -258,11 +277,11 @@
     letter-spacing: 0.5px;
     margin: 0.2rem 0;
   }
-  .featured2 .featuredTitle,
+  /* .featured2 .featuredTitle,
   .featured2 .featuredWww,
   .featuredSubtitle2 {
     margin-left: 50%;
-  }
+  } */
   .featuredPara {
     margin-bottom: 1.2rem;
   }

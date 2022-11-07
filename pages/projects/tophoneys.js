@@ -44,7 +44,7 @@ const TopHoneys = () => {
                 </li>
                 <li>
                   <a
-                    href='https://github.com/TomaszPietrzykowski/tophoneys-backendr'
+                    href='https://github.com/TomaszPietrzykowski/tophoneys-backend'
                     target='_blank'
                   >
                     Repo backend

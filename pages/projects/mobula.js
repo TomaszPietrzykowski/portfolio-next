@@ -31,14 +31,14 @@ const Mobula = () => {
             <h4 className={styles.detailsSubhead}>Quick links</h4>
             <p className={styles.detailsPara3}>
               <ul>
-                <li>
+                {/* <li>
                   <a href='https://mobula.dev' target='_blank'>
                     Project live
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a
-                    href='https://github.com/TomaszPietrzykowski/tophoneys-frontend'
+                    href='https://github.com/TomaszPietrzykowski/mobula-api'
                     target='_blank'
                   >
                     Repo frontend
@@ -46,7 +46,7 @@ const Mobula = () => {
                 </li>
                 <li>
                   <a
-                    href='https://github.com/TomaszPietrzykowski/tophoneys-backendr'
+                    href='https://github.com/TomaszPietrzykowski/mobula-api-server'
                     target='_blank'
                   >
                     Repo backend
@@ -93,16 +93,16 @@ const Mobula = () => {
             </p>
             <p className={styles.detailsPara3}>
               Development of Mobula app was very satisfying for me for two main
-              resons. First one would be the TypeScript, which turned out to be
+              reasons. First one would be the TypeScript, which turned out to be
               very rewarding to work with. And second - deep dive into REST
               architecture, that gave me a lot of confidence in fullstack
               development and solid understanding of computer networking.
             </p>
             <p className={styles.detailsPara3}>
-              Give it a shot:{' '}
+              {/* Give it a shot:{' '}
               <a href='https://mobula.dev' target='_blank'>
                 www.mobula.dev
-              </a>
+              </a> */}
             </p>
           </div>
         </div>
