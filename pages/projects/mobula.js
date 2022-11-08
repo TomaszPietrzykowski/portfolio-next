@@ -87,7 +87,7 @@ const Mobula = () => {
               Inspired by software like Postman and Insomnia I decided to build
               a tool similar in functionality but less bloathed and more
               accessible. Meant for rapid testing and design, Mobula has
-              intuitive, recognizable interface and provides resonable, useful
+              intuitive, recognizable interface and provides reasonable, useful
               set of testing functionalities, while staying light-weight and
               easy to work with.
             </p>

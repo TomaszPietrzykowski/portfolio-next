@@ -92,7 +92,7 @@ const ClimateMonitor = () => {
               write and expose the one of my own.
             </p>
             <p className={styles.detailsPara}>
-              Some highlights of development would be lot of fun with
+              Some highlights of development would be a lot of fun with
               Material&nbsp;UI and a deep dive into REST architecture. I am also
               happy to provide useful resource for other developers and possibly
               contribute by that to raising climate awareness.
