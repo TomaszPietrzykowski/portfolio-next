@@ -87,15 +87,15 @@ const ClimateMonitor = () => {
               Climate Monitor evolved quite a bit from it's original idea.
               Initially I wanted to play with data presentation, see how deeply
               I can customize Chart.js library. Frontend app was supposed to
-              consume API and present charted data. Apparently I could not find
-              API that I would be 100% satisfied with, so I decided to write and
-              expose the one of my own.
+              only consume API and present charted data. Turned out I could not
+              find an API that I would be 100% satisfied with, so I decided to
+              write and expose the one of my own.
             </p>
             <p className={styles.detailsPara}>
-              Some highlights of development would be lots of fun with
+              Some highlights of development would be lot of fun with
               Material&nbsp;UI and a deep dive into REST architecture. I am also
-              happy to provide useful resources to other developers and possibly
-              contribute by that to raise of climate awareness.
+              happy to provide useful resource for other developers and possibly
+              contribute by that to raising climate awareness.
             </p>
             <p className={styles.detailsPara}>
               Give it a shot:{' '}

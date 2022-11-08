@@ -92,9 +92,9 @@ const Mobula = () => {
               easy to work with.
             </p>
             <p className={styles.detailsPara3}>
-              Development of Mobula app was very satisfying for me for two main
-              reasons. First one would be the TypeScript, which turned out to be
-              very rewarding to work with. And second - deep dive into REST
+              Development of Mobula app was very satisfying for two reasons.
+              First one would be the TypeScript, which turned out to be very
+              rewarding to work with. And second - deep dive into REST
               architecture, that gave me a lot of confidence in fullstack
               development and solid understanding of computer networking.
             </p>

@@ -20,11 +20,14 @@ const TopHoneys = () => {
             </div>
             <h4 className={styles.detailsSubhead}>Description</h4>
             <p className={styles.detailsPara2}>
-              MERN stack e-commerce app running in production since June 2021.
+              MERN stack e-commerce app, running in production since June 2021.
               Webshop implements all user auth logic, provides custom profiles
-              for clients and functionality-rich admin area. Fully responsive
-              app with wide scope of supported payment methods. Fast, 3-steps
-              checkout, designed with UX and conversion in mind.
+              for clients and functionality-rich admin area with 3 tiers of
+              permissons. Admin area fully accessible for non-technical user.
+              Responsive app, PWA-optimized, with wide scope of supported
+              payment methods. Fast, 3-steps checkout, designed with UX and
+              conversion in mind. Email notification and reminder logic
+              implemented for dropout percentage reduction.
             </p>
             <h4 className={styles.detailsSubhead}>Quick links</h4>
             <p className={styles.detailsPara2}>
@@ -78,29 +81,29 @@ const TopHoneys = () => {
             </p>
             <p className={styles.detailsPara2}>
               React SPA frontend with Redux state management. Custom styles in
-              jss applied via MaterialUI theming system. Axios used for data
+              jss, applied via MaterialUI theming system. Axios used for data
               fetching.
             </p>
             <h4 className={styles.detailsSubhead}>Story behind</h4>
             <p className={styles.detailsPara2}>
               Designed and built for startup, Top Honeys app was kind of a
-              journey for me. I initially based payments on PayPal, but I didn't
-              want the app to rely too much on third party. PayPal aggressively
-              promotes it's client-side implementation. I ended up implementing
-              Mollie Payments (best decision ever) and designing architecture
-              where client, product and transaction data is stored within own
-              backend, allowing necessary validation without duplicating data.
+              journey for me. I initially planned to use PayPal gateway. PayPal
+              however aggressively promotes it's client-side implementation
+              which didn't seem particularly secure. Additionally discouraged by
+              experiences like features perfectly working in sandbox environment
+              and simply impossible in production, I decided to look further and
+              ended up using Mollie with secure, backend implementation and the
+              suite of payment methods ideal for Benelux.
             </p>
             <p className={styles.detailsPara2}>
-              Development highlights would certainly be PayPal developer
-              experience versus smooth and pleasant Mollie implementation. But
-              also funny lessons learnt, like Google Translate confusing the
-              world out of React, or Safari ruining my day.
+              Development highlights would certainly be funny lessons learnt,
+              like Google Translate confusing the world out of React and
+              changing prices of honey in my shop.
             </p>
             <p className={styles.detailsPara2}>
               Seriously though, I enjoyed working with Redux within this project
               a lot. Somewhat repetitive, handling the state of this size gave
-              me solid grip on the workflow within Redux to the point I find it
+              me a solid grip on workflow within Redux, to the point I find it
               intuitive and enjoyable.
             </p>
             <p className={styles.detailsPara2}>

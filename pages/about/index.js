@@ -13,23 +13,24 @@ const About = () => {
 
         <h3 className={styles.subtitle}>who am i</h3>
         <p>
-          Hi, I am Tomasz, polish developer, based in Amsterdam, NL. <br />
-          <br />I have been building web applications since 2019. I have built,
-          deployed and I am maintaining multiple functional apps, like content
-          management system, public API or e-commerce site. My applications are
-          secure, user friendly and SEO optimized.
+          Hi, I am Tomasz. Polish, self-taught developer, based in Amsterdam,
+          NL. <br />
+          <br />I have been building web applications since 2019. I built and
+          deployed a number of apps, like content management system, public API
+          or e-commerce site. My applications are secure, user friendly and SEO
+          optimized.
         </p>
 
         <h3 className={styles.subtitle}>technologies</h3>
         <p>
           My web biom of choice is Node.js environment with React, Next.js and
           Redux at the frontend. I use javascript and typescript. I build
-          RESTful API's with Node and Express. I write custom css and have
+          RESTful APIs with Node and Express. I write custom css and have
           experience with frameworks like Material UI. I work with MongoDB and
           Mongoose, use Git and Github for code and Asana for project
-          management. I make mockups in Figma (edit: let's see about that one
-          though...) and my favourite IDE is VSCode. Having that all said, as a
-          self-thaught developer, I am eager to learn new technologies.
+          management. I make mockups in Figma and my IDE is VSCode. Having that
+          all said, I am easy to be mentored and eager to learn new
+          technologies.
         </p>
         <div className={styles.imgMobile}>
           <Image
@@ -42,22 +43,22 @@ const About = () => {
         </div>
         <h3 className={styles.subtitle}>interests</h3>
         <p>
-          All things React. I consider Next.js framework very exciting to work
-          with. Other than that: "backend-of-the-frontend", state mangement,
-          data flow through component tree. Not that much of a designer, I am
-          particularily interested in frontend logic.
+          React and it's environment, building lightning fast interfaces.
+          Recently experimenting with TypeScript, I start to see how useful it
+          is. I also find Next.js framework very exiting to work with. And I am
+          curiously looking towards three.js.
           <br />
-          <br />
-          Another topic I find really interesting is communication between
-          frontend and backend. Request journey through the web has a special
-          charm form me. That's probably why I built public API and HTTP client.
-          I like Express way of building API's, it's simplicity, clarity and
-          minimalizm. And I find concept of middleware simply OP :).
+          <br />I am also interested in the communication between frontend and
+          backend. Request journey through the web has a special charm form me.
+          I tried to explore REST architecture by building HTTP client and
+          exposing public API. I like the Express way of building APIs for it's
+          simplicity but also plan to explore graphQl.
         </p>
         <h3 className={styles.subtitle}>goal</h3>
         <p>
-          Currently looking for an entry level position in web development
-          field. <br />
+          I am currently looking for an entry level position in web development
+          field. Preferably as a Junior Frontend/React Developer.
+          <br />
           <br />
           Are you hiring? Let's get in touch! Connect on{' '}
           <a

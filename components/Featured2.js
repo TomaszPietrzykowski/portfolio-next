@@ -33,7 +33,7 @@ const Featured2 = () => {
           body data in custom editor.
         </p>
         <p className={styles.featuredPara}>
-          Design with ease. Organize your API's in projects and your requests in
+          Design with ease. Organize your APIs in projects and your requests in
           collections. Save your work with free account and access from
           anywhere.
         </p>
@@ -44,7 +44,7 @@ const Featured2 = () => {
         <p className={styles.featuredPara}>
           Use custom proxy by default to expose headers and validate CORS.
           Disable proxy with one click and read resources directly from the
-          browser. Postman won't let you do it - just saying...
+          browser. Postman won't let you do it - just saying... ;)
         </p>
         <div className={styles.featuredBtnsContainer2}>
           {/* <a href='https://mobula.dev' target='_blank'>
